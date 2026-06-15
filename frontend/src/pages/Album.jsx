@@ -102,14 +102,16 @@ function CountryCard({ country, onSelectSticker }) {
           <p className="truncate font-bold text-gray-800">
             {getCountryLabel(country.country_name, country.country_code)}
           </p>
-          <p className="text-sm text-gray-500 md:text-xs">
-            {summary.pegadas}/{summary.total} pegadas
-          </p>
-          <p className="mt-0.5 text-sm md:text-xs">
-            <span className="font-semibold text-faltante">{summary.faltantes} faltantes</span>
-            {" · "}
-            <span className="font-semibold text-yellow-600">{summary.repetidas} repetidas</span>
-          </p>
+          <div className="hidden md:block">
+            <p className="text-xs text-gray-500">
+              {summary.pegadas}/{summary.total} pegadas
+            </p>
+            <p className="mt-0.5 text-xs">
+              <span className="font-semibold text-faltante">{summary.faltantes} faltantes</span>
+              {" · "}
+              <span className="font-semibold text-yellow-600">{summary.repetidas} repetidas</span>
+            </p>
+          </div>
         </div>
         <ProgressRing
           percentage={summary.porcentaje}
@@ -120,6 +122,17 @@ function CountryCard({ country, onSelectSticker }) {
         >
           <span className="text-sm font-bold text-gray-700">{summary.porcentaje}%</span>
         </ProgressRing>
+      </div>
+
+      <div className="mt-2 md:hidden">
+        <p className="text-sm text-gray-500">
+          {summary.pegadas}/{summary.total} pegadas
+        </p>
+        <p className="mt-0.5 text-sm">
+          <span className="font-semibold text-faltante">{summary.faltantes} faltantes</span>
+          {" · "}
+          <span className="font-semibold text-yellow-600">{summary.repetidas} repetidas</span>
+        </p>
       </div>
 
       <div className="mt-3 grid grid-cols-5 gap-2 md:grid-cols-10 md:gap-1">

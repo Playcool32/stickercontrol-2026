@@ -105,12 +105,12 @@ export default function Dashboard() {
 
       <div>
         <h2 className="mb-2 text-lg font-bold text-gray-800">Accesos rápidos</h2>
-        <div className="grid grid-cols-2 gap-3">
+        <div className="flex flex-col gap-2 md:grid md:grid-cols-2 md:gap-3">
           <QuickLink to="/buscar" label="Buscar" icon={IconSearch} />
           <QuickLink to="/album" label="Álbum" icon={IconAlbum} />
           <QuickLink to="/faltantes" label="Faltantes" icon={IconAlert} />
           <QuickLink to="/repetidas" label="Repetidas" icon={IconLayers} />
-          <QuickLink to="/cerca" label="Usuarios cerca" icon={IconMapPin} className="col-span-2" />
+          <QuickLink to="/cerca" label="Usuarios cerca" icon={IconMapPin} className="md:col-span-2" />
         </div>
       </div>
     </div>

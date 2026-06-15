@@ -47,11 +47,11 @@ export default function Missing() {
           <p className="font-bold text-gray-800">
             {country.country_name} ({country.country_code})
           </p>
-          <div className="mt-2 flex flex-wrap gap-2 md:gap-1">
+          <div className="mt-2 grid grid-cols-4 gap-2 md:flex md:flex-wrap md:gap-1">
             {country.numbers.map((number) => (
               <span
                 key={number}
-                className="flex items-center justify-center rounded-full bg-red-50 px-3 py-3 text-sm font-bold text-faltante md:px-2 md:py-1 md:text-xs md:font-semibold"
+                className="flex w-full items-center justify-center rounded-full bg-red-50 px-3 py-3 text-sm font-bold text-faltante md:w-auto md:px-2 md:py-1 md:text-xs md:font-semibold"
               >
                 {number === 0 ? "00" : number}
               </span>

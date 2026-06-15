@@ -23,7 +23,7 @@ const NAV_ITEMS = [
 export default function Layout() {
   return (
     <div className="flex min-h-screen flex-col bg-gray-50">
-      <main className="w-full flex-1 p-4 pb-24 md:mx-auto md:max-w-2xl">
+      <main className="w-full flex-1 p-4 pb-28 md:mx-auto md:max-w-2xl md:pb-24">
         <Outlet />
       </main>
 
@@ -36,7 +36,7 @@ export default function Layout() {
                 key={item.to}
                 to={item.to}
                 className={({ isActive }) =>
-                  `flex flex-col items-center justify-center gap-0.5 py-2 text-[10px] font-semibold leading-tight transition-colors ${
+                  `flex flex-col items-center justify-center gap-1 py-2.5 text-xs font-semibold leading-tight transition-colors md:gap-0.5 md:py-2 md:text-[10px] ${
                     isActive ? "text-green-600" : "text-gray-400"
                   }`
                 }
@@ -44,11 +44,11 @@ export default function Layout() {
                 {({ isActive }) => (
                   <>
                     <span
-                      className={`flex h-7 w-7 items-center justify-center rounded-full transition-colors ${
+                      className={`flex h-9 w-9 items-center justify-center rounded-full transition-colors md:h-7 md:w-7 ${
                         isActive ? "bg-green-100" : ""
                       }`}
                     >
-                      <Icon className="h-5 w-5" />
+                      <Icon className="h-6 w-6 md:h-5 md:w-5" />
                     </span>
                     {item.label}
                   </>
