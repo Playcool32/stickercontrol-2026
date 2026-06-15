@@ -1,6 +1,19 @@
 from pydantic import BaseModel
 
 
+class GoogleLoginRequest(BaseModel):
+    """Credential (ID token JWT) entregado por Google Identity Services."""
+
+    credential: str
+
+
+class UserOut(BaseModel):
+    id: int
+    email: str
+    name: str
+    avatar: str | None
+
+
 class StickerOut(BaseModel):
     """Figurita del catalogo + estado de coleccion del usuario actual."""
 

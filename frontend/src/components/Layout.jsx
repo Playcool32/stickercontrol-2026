@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 
+import { useAuth } from "../context/AuthContext.jsx";
 import {
   IconAlbum,
   IconAlert,
@@ -21,8 +22,31 @@ const NAV_ITEMS = [
 ];
 
 export default function Layout() {
+  const { user, logout } = useAuth();
+
   return (
     <div className="flex min-h-screen flex-col bg-gray-50">
+      <header className="flex items-center justify-between border-b border-gray-100 bg-white p-3 md:mx-auto md:w-full md:max-w-2xl">
+        <span className="text-sm font-bold text-gray-800">StickerControl 2026</span>
+        {user && (
+          <div className="flex items-center gap-2">
+            {user.avatar && (
+              <img src={user.avatar} alt={user.name} className="h-6 w-6 rounded-full" />
+            )}
+            <span className="max-w-[96px] truncate text-xs font-semibold text-gray-600">
+              {user.name}
+            </span>
+            <button
+              type="button"
+              onClick={logout}
+              className="text-xs font-bold text-gray-400 active:text-gray-600"
+            >
+              Salir
+            </button>
+          </div>
+        )}
+      </header>
+
       <main className="w-full flex-1 p-4 pb-28 md:mx-auto md:max-w-2xl md:pb-24">
         <Outlet />
       </main>

@@ -53,24 +53,28 @@ def _ensure_user_profile_columns() -> None:
         conn.commit()
 
 
+def _ensure_user_google_id_column() -> None:
+    """Agrega `users.google_id` (Fase 2A) si falta, con indice unico.
+
+    Mismo patron que _ensure_user_profile_columns: ALTER TABLE ADD COLUMN
+    para bases SQLite existentes. SQLite no permite agregar una constraint
+    UNIQUE via ALTER TABLE, por eso la columna se agrega sin constraint y
+    el indice unico se crea aparte (los NULL no chocan entre si en SQLite).
+    """
+    with engine.connect() as conn:
+        existing = {row[1] for row in conn.exec_driver_sql("PRAGMA table_info(users)")}
+        if "google_id" not in existing:
+            conn.exec_driver_sql("ALTER TABLE users ADD COLUMN google_id VARCHAR")
+        conn.exec_driver_sql(
+            "CREATE UNIQUE INDEX IF NOT EXISTS ix_users_google_id ON users (google_id)"
+        )
+        conn.commit()
+
+
 def init_db() -> None:
-    """Crea las tablas (si no existen) y un usuario local por defecto."""
+    """Crea las tablas (si no existen) y aplica migraciones livianas."""
     from . import models  # noqa: F401  (registra los modelos en Base)
 
     Base.metadata.create_all(bind=engine)
     _ensure_user_profile_columns()
-
-    db = SessionLocal()
-    try:
-        default_user = db.query(models.User).filter_by(id=1).first()
-        if default_user is None:
-            default_user = models.User(
-                id=1,
-                email="local@stickercontrol.local",
-                name="Coleccionista Local",
-                avatar=None,
-            )
-            db.add(default_user)
-            db.commit()
-    finally:
-        db.close()
+    _ensure_user_google_id_column()

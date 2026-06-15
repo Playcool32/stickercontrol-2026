@@ -16,11 +16,13 @@ from .database import Base
 
 
 class User(Base):
-    """Usuario de la coleccion. En Fase 0 solo existe el usuario local (id=1)."""
+    """Usuario autenticado con Google (Fase 2A). Cada usuario tiene su
+    propia coleccion en user_stickers."""
 
     __tablename__ = "users"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    google_id: Mapped[str | None] = mapped_column(String, unique=True, index=True, nullable=True)
     email: Mapped[str] = mapped_column(String, unique=True, index=True)
     name: Mapped[str] = mapped_column(String)
     avatar: Mapped[str | None] = mapped_column(String, nullable=True)

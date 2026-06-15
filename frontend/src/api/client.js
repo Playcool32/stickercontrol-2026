@@ -6,12 +6,15 @@ const BASE_URL = `${import.meta.env.BASE_URL}api`;
 async function request(path, options = {}) {
   const res = await fetch(`${BASE_URL}${path}`, {
     headers: { "Content-Type": "application/json" },
+    credentials: "include",
     ...options,
   });
 
   if (!res.ok) {
     const text = await res.text();
-    throw new Error(`${res.status} ${res.statusText}: ${text}`);
+    const error = new Error(`${res.status} ${res.statusText}: ${text}`);
+    error.status = res.status;
+    throw error;
   }
 
   if (res.status === 204) return null;
@@ -86,4 +89,19 @@ export function getNearby() {
 
 export function getContactMessage(userId) {
   return request(`/nearby/${userId}/contact-message`);
+}
+
+export function loginWithGoogle(credential) {
+  return request("/auth/google", {
+    method: "POST",
+    body: JSON.stringify({ credential }),
+  });
+}
+
+export function getMe() {
+  return request("/auth/me");
+}
+
+export function logout() {
+  return request("/auth/logout", { method: "POST" });
 }
