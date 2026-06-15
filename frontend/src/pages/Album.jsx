@@ -102,10 +102,10 @@ function CountryCard({ country, onSelectSticker }) {
           <p className="truncate font-bold text-gray-800">
             {getCountryLabel(country.country_name, country.country_code)}
           </p>
-          <p className="text-xs text-gray-500">
+          <p className="text-sm text-gray-500 md:text-xs">
             {summary.pegadas}/{summary.total} pegadas
           </p>
-          <p className="mt-0.5 text-xs">
+          <p className="mt-0.5 text-sm md:text-xs">
             <span className="font-semibold text-faltante">{summary.faltantes} faltantes</span>
             {" · "}
             <span className="font-semibold text-yellow-600">{summary.repetidas} repetidas</span>
@@ -118,18 +118,18 @@ function CountryCard({ country, onSelectSticker }) {
           progressColor="#22c55e"
           trackColor="#e5e7eb"
         >
-          <span className="text-xs font-bold text-gray-700">{summary.porcentaje}%</span>
+          <span className="text-sm font-bold text-gray-700">{summary.porcentaje}%</span>
         </ProgressRing>
       </div>
 
-      <div className="mt-3 grid grid-cols-8 gap-1 sm:grid-cols-10">
+      <div className="mt-3 grid grid-cols-5 gap-2 md:grid-cols-10 md:gap-1">
         {country.stickers.map((sticker) => (
           <button
             key={sticker.id}
             type="button"
             title={`${sticker.code} - ${sticker.player_name_or_detail}`}
             onClick={() => onSelectSticker(sticker)}
-            className={`flex h-8 items-center justify-center rounded-lg text-xs font-semibold transition-transform active:scale-90 ${STATUS_COLOR[sticker.status] || "bg-gray-200"}`}
+            className={`flex h-11 items-center justify-center rounded-lg text-sm font-bold transition-transform active:scale-90 md:h-8 md:text-xs md:font-semibold ${STATUS_COLOR[sticker.status] || "bg-gray-200"}`}
           >
             {sticker.code === "00" ? "00" : sticker.number}
           </button>

@@ -47,11 +47,11 @@ export default function Duplicates() {
           <p className="font-bold text-gray-800">
             {country.country_name} ({country.country_code})
           </p>
-          <div className="mt-2 flex flex-wrap gap-1">
+          <div className="mt-2 flex flex-wrap gap-2 md:gap-1">
             {country.items.map((item) => (
               <span
                 key={item.number}
-                className="rounded-full bg-yellow-50 px-2 py-1 text-xs font-semibold text-yellow-700"
+                className="flex items-center justify-center rounded-full bg-yellow-50 px-3 py-3 text-sm font-bold text-yellow-700 md:px-2 md:py-1 md:text-xs md:font-semibold"
               >
                 {(() => {
                   const label = item.number === 0 ? "00" : item.number;
