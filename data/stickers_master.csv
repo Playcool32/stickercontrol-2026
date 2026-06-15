@@ -1,0 +1,981 @@
+code,group,country_code,country_name,number,player_name_or_detail,type
+00,,FWC,FIFA World Cup 2026,0,Logo Oficial Mundial 2026,logo
+FWC1,,FWC,FIFA World Cup 2026,1,Especial FIFA 1,special
+FWC2,,FWC,FIFA World Cup 2026,2,Especial FIFA 2,special
+FWC3,,FWC,FIFA World Cup 2026,3,Especial FIFA 3,special
+FWC4,,FWC,FIFA World Cup 2026,4,Especial FIFA 4,special
+FWC5,,FWC,FIFA World Cup 2026,5,Especial FIFA 5,special
+FWC6,,FWC,FIFA World Cup 2026,6,Especial FIFA 6,special
+FWC7,,FWC,FIFA World Cup 2026,7,Especial FIFA 7,special
+FWC8,,FWC,FIFA World Cup 2026,8,Especial FIFA 8,special
+FWC9,,FWC,FIFA World Cup 2026,9,Especial FIFA 9,special
+FWC10,,FWC,FIFA World Cup 2026,10,Especial FIFA 10,special
+FWC11,,FWC,FIFA World Cup 2026,11,Especial FIFA 11,special
+FWC12,,FWC,FIFA World Cup 2026,12,Especial FIFA 12,special
+FWC13,,FWC,FIFA World Cup 2026,13,Especial FIFA 13,special
+FWC14,,FWC,FIFA World Cup 2026,14,Especial FIFA 14,special
+FWC15,,FWC,FIFA World Cup 2026,15,Especial FIFA 15,special
+FWC16,,FWC,FIFA World Cup 2026,16,Especial FIFA 16,special
+FWC17,,FWC,FIFA World Cup 2026,17,Especial FIFA 17,special
+FWC18,,FWC,FIFA World Cup 2026,18,Especial FIFA 18,special
+FWC19,,FWC,FIFA World Cup 2026,19,Especial FIFA 19,special
+MEX1,A,MEX,Mexico,1,Mexico 1,standard
+MEX2,A,MEX,Mexico,2,Mexico 2,standard
+MEX3,A,MEX,Mexico,3,Mexico 3,standard
+MEX4,A,MEX,Mexico,4,Mexico 4,standard
+MEX5,A,MEX,Mexico,5,Mexico 5,standard
+MEX6,A,MEX,Mexico,6,Mexico 6,standard
+MEX7,A,MEX,Mexico,7,Mexico 7,standard
+MEX8,A,MEX,Mexico,8,Mexico 8,standard
+MEX9,A,MEX,Mexico,9,Mexico 9,standard
+MEX10,A,MEX,Mexico,10,Mexico 10,standard
+MEX11,A,MEX,Mexico,11,Mexico 11,standard
+MEX12,A,MEX,Mexico,12,Mexico 12,standard
+MEX13,A,MEX,Mexico,13,Mexico 13,standard
+MEX14,A,MEX,Mexico,14,Mexico 14,standard
+MEX15,A,MEX,Mexico,15,Mexico 15,standard
+MEX16,A,MEX,Mexico,16,Mexico 16,standard
+MEX17,A,MEX,Mexico,17,Mexico 17,standard
+MEX18,A,MEX,Mexico,18,Mexico 18,standard
+MEX19,A,MEX,Mexico,19,Mexico 19,standard
+MEX20,A,MEX,Mexico,20,Mexico 20,standard
+RSA1,A,RSA,South Africa,1,South Africa 1,standard
+RSA2,A,RSA,South Africa,2,South Africa 2,standard
+RSA3,A,RSA,South Africa,3,South Africa 3,standard
+RSA4,A,RSA,South Africa,4,South Africa 4,standard
+RSA5,A,RSA,South Africa,5,South Africa 5,standard
+RSA6,A,RSA,South Africa,6,South Africa 6,standard
+RSA7,A,RSA,South Africa,7,South Africa 7,standard
+RSA8,A,RSA,South Africa,8,South Africa 8,standard
+RSA9,A,RSA,South Africa,9,South Africa 9,standard
+RSA10,A,RSA,South Africa,10,South Africa 10,standard
+RSA11,A,RSA,South Africa,11,South Africa 11,standard
+RSA12,A,RSA,South Africa,12,South Africa 12,standard
+RSA13,A,RSA,South Africa,13,South Africa 13,standard
+RSA14,A,RSA,South Africa,14,South Africa 14,standard
+RSA15,A,RSA,South Africa,15,South Africa 15,standard
+RSA16,A,RSA,South Africa,16,South Africa 16,standard
+RSA17,A,RSA,South Africa,17,South Africa 17,standard
+RSA18,A,RSA,South Africa,18,South Africa 18,standard
+RSA19,A,RSA,South Africa,19,South Africa 19,standard
+RSA20,A,RSA,South Africa,20,South Africa 20,standard
+KOR1,A,KOR,South Korea,1,South Korea 1,standard
+KOR2,A,KOR,South Korea,2,South Korea 2,standard
+KOR3,A,KOR,South Korea,3,South Korea 3,standard
+KOR4,A,KOR,South Korea,4,South Korea 4,standard
+KOR5,A,KOR,South Korea,5,South Korea 5,standard
+KOR6,A,KOR,South Korea,6,South Korea 6,standard
+KOR7,A,KOR,South Korea,7,South Korea 7,standard
+KOR8,A,KOR,South Korea,8,South Korea 8,standard
+KOR9,A,KOR,South Korea,9,South Korea 9,standard
+KOR10,A,KOR,South Korea,10,South Korea 10,standard
+KOR11,A,KOR,South Korea,11,South Korea 11,standard
+KOR12,A,KOR,South Korea,12,South Korea 12,standard
+KOR13,A,KOR,South Korea,13,South Korea 13,standard
+KOR14,A,KOR,South Korea,14,South Korea 14,standard
+KOR15,A,KOR,South Korea,15,South Korea 15,standard
+KOR16,A,KOR,South Korea,16,South Korea 16,standard
+KOR17,A,KOR,South Korea,17,South Korea 17,standard
+KOR18,A,KOR,South Korea,18,South Korea 18,standard
+KOR19,A,KOR,South Korea,19,South Korea 19,standard
+KOR20,A,KOR,South Korea,20,South Korea 20,standard
+CZE1,A,CZE,Czech Republic,1,Czech Republic 1,standard
+CZE2,A,CZE,Czech Republic,2,Czech Republic 2,standard
+CZE3,A,CZE,Czech Republic,3,Czech Republic 3,standard
+CZE4,A,CZE,Czech Republic,4,Czech Republic 4,standard
+CZE5,A,CZE,Czech Republic,5,Czech Republic 5,standard
+CZE6,A,CZE,Czech Republic,6,Czech Republic 6,standard
+CZE7,A,CZE,Czech Republic,7,Czech Republic 7,standard
+CZE8,A,CZE,Czech Republic,8,Czech Republic 8,standard
+CZE9,A,CZE,Czech Republic,9,Czech Republic 9,standard
+CZE10,A,CZE,Czech Republic,10,Czech Republic 10,standard
+CZE11,A,CZE,Czech Republic,11,Czech Republic 11,standard
+CZE12,A,CZE,Czech Republic,12,Czech Republic 12,standard
+CZE13,A,CZE,Czech Republic,13,Czech Republic 13,standard
+CZE14,A,CZE,Czech Republic,14,Czech Republic 14,standard
+CZE15,A,CZE,Czech Republic,15,Czech Republic 15,standard
+CZE16,A,CZE,Czech Republic,16,Czech Republic 16,standard
+CZE17,A,CZE,Czech Republic,17,Czech Republic 17,standard
+CZE18,A,CZE,Czech Republic,18,Czech Republic 18,standard
+CZE19,A,CZE,Czech Republic,19,Czech Republic 19,standard
+CZE20,A,CZE,Czech Republic,20,Czech Republic 20,standard
+CAN1,B,CAN,Canada,1,Canada 1,standard
+CAN2,B,CAN,Canada,2,Canada 2,standard
+CAN3,B,CAN,Canada,3,Canada 3,standard
+CAN4,B,CAN,Canada,4,Canada 4,standard
+CAN5,B,CAN,Canada,5,Canada 5,standard
+CAN6,B,CAN,Canada,6,Canada 6,standard
+CAN7,B,CAN,Canada,7,Canada 7,standard
+CAN8,B,CAN,Canada,8,Canada 8,standard
+CAN9,B,CAN,Canada,9,Canada 9,standard
+CAN10,B,CAN,Canada,10,Canada 10,standard
+CAN11,B,CAN,Canada,11,Canada 11,standard
+CAN12,B,CAN,Canada,12,Canada 12,standard
+CAN13,B,CAN,Canada,13,Canada 13,standard
+CAN14,B,CAN,Canada,14,Canada 14,standard
+CAN15,B,CAN,Canada,15,Canada 15,standard
+CAN16,B,CAN,Canada,16,Canada 16,standard
+CAN17,B,CAN,Canada,17,Canada 17,standard
+CAN18,B,CAN,Canada,18,Canada 18,standard
+CAN19,B,CAN,Canada,19,Canada 19,standard
+CAN20,B,CAN,Canada,20,Canada 20,standard
+BIH1,B,BIH,Bosnia and Herzegovina,1,Bosnia and Herzegovina 1,standard
+BIH2,B,BIH,Bosnia and Herzegovina,2,Bosnia and Herzegovina 2,standard
+BIH3,B,BIH,Bosnia and Herzegovina,3,Bosnia and Herzegovina 3,standard
+BIH4,B,BIH,Bosnia and Herzegovina,4,Bosnia and Herzegovina 4,standard
+BIH5,B,BIH,Bosnia and Herzegovina,5,Bosnia and Herzegovina 5,standard
+BIH6,B,BIH,Bosnia and Herzegovina,6,Bosnia and Herzegovina 6,standard
+BIH7,B,BIH,Bosnia and Herzegovina,7,Bosnia and Herzegovina 7,standard
+BIH8,B,BIH,Bosnia and Herzegovina,8,Bosnia and Herzegovina 8,standard
+BIH9,B,BIH,Bosnia and Herzegovina,9,Bosnia and Herzegovina 9,standard
+BIH10,B,BIH,Bosnia and Herzegovina,10,Bosnia and Herzegovina 10,standard
+BIH11,B,BIH,Bosnia and Herzegovina,11,Bosnia and Herzegovina 11,standard
+BIH12,B,BIH,Bosnia and Herzegovina,12,Bosnia and Herzegovina 12,standard
+BIH13,B,BIH,Bosnia and Herzegovina,13,Bosnia and Herzegovina 13,standard
+BIH14,B,BIH,Bosnia and Herzegovina,14,Bosnia and Herzegovina 14,standard
+BIH15,B,BIH,Bosnia and Herzegovina,15,Bosnia and Herzegovina 15,standard
+BIH16,B,BIH,Bosnia and Herzegovina,16,Bosnia and Herzegovina 16,standard
+BIH17,B,BIH,Bosnia and Herzegovina,17,Bosnia and Herzegovina 17,standard
+BIH18,B,BIH,Bosnia and Herzegovina,18,Bosnia and Herzegovina 18,standard
+BIH19,B,BIH,Bosnia and Herzegovina,19,Bosnia and Herzegovina 19,standard
+BIH20,B,BIH,Bosnia and Herzegovina,20,Bosnia and Herzegovina 20,standard
+QAT1,B,QAT,Qatar,1,Qatar 1,standard
+QAT2,B,QAT,Qatar,2,Qatar 2,standard
+QAT3,B,QAT,Qatar,3,Qatar 3,standard
+QAT4,B,QAT,Qatar,4,Qatar 4,standard
+QAT5,B,QAT,Qatar,5,Qatar 5,standard
+QAT6,B,QAT,Qatar,6,Qatar 6,standard
+QAT7,B,QAT,Qatar,7,Qatar 7,standard
+QAT8,B,QAT,Qatar,8,Qatar 8,standard
+QAT9,B,QAT,Qatar,9,Qatar 9,standard
+QAT10,B,QAT,Qatar,10,Qatar 10,standard
+QAT11,B,QAT,Qatar,11,Qatar 11,standard
+QAT12,B,QAT,Qatar,12,Qatar 12,standard
+QAT13,B,QAT,Qatar,13,Qatar 13,standard
+QAT14,B,QAT,Qatar,14,Qatar 14,standard
+QAT15,B,QAT,Qatar,15,Qatar 15,standard
+QAT16,B,QAT,Qatar,16,Qatar 16,standard
+QAT17,B,QAT,Qatar,17,Qatar 17,standard
+QAT18,B,QAT,Qatar,18,Qatar 18,standard
+QAT19,B,QAT,Qatar,19,Qatar 19,standard
+QAT20,B,QAT,Qatar,20,Qatar 20,standard
+SUI1,B,SUI,Switzerland,1,Switzerland 1,standard
+SUI2,B,SUI,Switzerland,2,Switzerland 2,standard
+SUI3,B,SUI,Switzerland,3,Switzerland 3,standard
+SUI4,B,SUI,Switzerland,4,Switzerland 4,standard
+SUI5,B,SUI,Switzerland,5,Switzerland 5,standard
+SUI6,B,SUI,Switzerland,6,Switzerland 6,standard
+SUI7,B,SUI,Switzerland,7,Switzerland 7,standard
+SUI8,B,SUI,Switzerland,8,Switzerland 8,standard
+SUI9,B,SUI,Switzerland,9,Switzerland 9,standard
+SUI10,B,SUI,Switzerland,10,Switzerland 10,standard
+SUI11,B,SUI,Switzerland,11,Switzerland 11,standard
+SUI12,B,SUI,Switzerland,12,Switzerland 12,standard
+SUI13,B,SUI,Switzerland,13,Switzerland 13,standard
+SUI14,B,SUI,Switzerland,14,Switzerland 14,standard
+SUI15,B,SUI,Switzerland,15,Switzerland 15,standard
+SUI16,B,SUI,Switzerland,16,Switzerland 16,standard
+SUI17,B,SUI,Switzerland,17,Switzerland 17,standard
+SUI18,B,SUI,Switzerland,18,Switzerland 18,standard
+SUI19,B,SUI,Switzerland,19,Switzerland 19,standard
+SUI20,B,SUI,Switzerland,20,Switzerland 20,standard
+BRA1,C,BRA,Brazil,1,Brazil 1,standard
+BRA2,C,BRA,Brazil,2,Brazil 2,standard
+BRA3,C,BRA,Brazil,3,Brazil 3,standard
+BRA4,C,BRA,Brazil,4,Brazil 4,standard
+BRA5,C,BRA,Brazil,5,Brazil 5,standard
+BRA6,C,BRA,Brazil,6,Brazil 6,standard
+BRA7,C,BRA,Brazil,7,Brazil 7,standard
+BRA8,C,BRA,Brazil,8,Brazil 8,standard
+BRA9,C,BRA,Brazil,9,Brazil 9,standard
+BRA10,C,BRA,Brazil,10,Brazil 10,standard
+BRA11,C,BRA,Brazil,11,Brazil 11,standard
+BRA12,C,BRA,Brazil,12,Brazil 12,standard
+BRA13,C,BRA,Brazil,13,Brazil 13,standard
+BRA14,C,BRA,Brazil,14,Brazil 14,standard
+BRA15,C,BRA,Brazil,15,Brazil 15,standard
+BRA16,C,BRA,Brazil,16,Brazil 16,standard
+BRA17,C,BRA,Brazil,17,Brazil 17,standard
+BRA18,C,BRA,Brazil,18,Brazil 18,standard
+BRA19,C,BRA,Brazil,19,Brazil 19,standard
+BRA20,C,BRA,Brazil,20,Brazil 20,standard
+MAR1,C,MAR,Morocco,1,Morocco 1,standard
+MAR2,C,MAR,Morocco,2,Morocco 2,standard
+MAR3,C,MAR,Morocco,3,Morocco 3,standard
+MAR4,C,MAR,Morocco,4,Morocco 4,standard
+MAR5,C,MAR,Morocco,5,Morocco 5,standard
+MAR6,C,MAR,Morocco,6,Morocco 6,standard
+MAR7,C,MAR,Morocco,7,Morocco 7,standard
+MAR8,C,MAR,Morocco,8,Morocco 8,standard
+MAR9,C,MAR,Morocco,9,Morocco 9,standard
+MAR10,C,MAR,Morocco,10,Morocco 10,standard
+MAR11,C,MAR,Morocco,11,Morocco 11,standard
+MAR12,C,MAR,Morocco,12,Morocco 12,standard
+MAR13,C,MAR,Morocco,13,Morocco 13,standard
+MAR14,C,MAR,Morocco,14,Morocco 14,standard
+MAR15,C,MAR,Morocco,15,Morocco 15,standard
+MAR16,C,MAR,Morocco,16,Morocco 16,standard
+MAR17,C,MAR,Morocco,17,Morocco 17,standard
+MAR18,C,MAR,Morocco,18,Morocco 18,standard
+MAR19,C,MAR,Morocco,19,Morocco 19,standard
+MAR20,C,MAR,Morocco,20,Morocco 20,standard
+HAI1,C,HAI,Haiti,1,Haiti 1,standard
+HAI2,C,HAI,Haiti,2,Haiti 2,standard
+HAI3,C,HAI,Haiti,3,Haiti 3,standard
+HAI4,C,HAI,Haiti,4,Haiti 4,standard
+HAI5,C,HAI,Haiti,5,Haiti 5,standard
+HAI6,C,HAI,Haiti,6,Haiti 6,standard
+HAI7,C,HAI,Haiti,7,Haiti 7,standard
+HAI8,C,HAI,Haiti,8,Haiti 8,standard
+HAI9,C,HAI,Haiti,9,Haiti 9,standard
+HAI10,C,HAI,Haiti,10,Haiti 10,standard
+HAI11,C,HAI,Haiti,11,Haiti 11,standard
+HAI12,C,HAI,Haiti,12,Haiti 12,standard
+HAI13,C,HAI,Haiti,13,Haiti 13,standard
+HAI14,C,HAI,Haiti,14,Haiti 14,standard
+HAI15,C,HAI,Haiti,15,Haiti 15,standard
+HAI16,C,HAI,Haiti,16,Haiti 16,standard
+HAI17,C,HAI,Haiti,17,Haiti 17,standard
+HAI18,C,HAI,Haiti,18,Haiti 18,standard
+HAI19,C,HAI,Haiti,19,Haiti 19,standard
+HAI20,C,HAI,Haiti,20,Haiti 20,standard
+SCO1,C,SCO,Scotland,1,Scotland 1,standard
+SCO2,C,SCO,Scotland,2,Scotland 2,standard
+SCO3,C,SCO,Scotland,3,Scotland 3,standard
+SCO4,C,SCO,Scotland,4,Scotland 4,standard
+SCO5,C,SCO,Scotland,5,Scotland 5,standard
+SCO6,C,SCO,Scotland,6,Scotland 6,standard
+SCO7,C,SCO,Scotland,7,Scotland 7,standard
+SCO8,C,SCO,Scotland,8,Scotland 8,standard
+SCO9,C,SCO,Scotland,9,Scotland 9,standard
+SCO10,C,SCO,Scotland,10,Scotland 10,standard
+SCO11,C,SCO,Scotland,11,Scotland 11,standard
+SCO12,C,SCO,Scotland,12,Scotland 12,standard
+SCO13,C,SCO,Scotland,13,Scotland 13,standard
+SCO14,C,SCO,Scotland,14,Scotland 14,standard
+SCO15,C,SCO,Scotland,15,Scotland 15,standard
+SCO16,C,SCO,Scotland,16,Scotland 16,standard
+SCO17,C,SCO,Scotland,17,Scotland 17,standard
+SCO18,C,SCO,Scotland,18,Scotland 18,standard
+SCO19,C,SCO,Scotland,19,Scotland 19,standard
+SCO20,C,SCO,Scotland,20,Scotland 20,standard
+USA1,D,USA,United States,1,United States 1,standard
+USA2,D,USA,United States,2,United States 2,standard
+USA3,D,USA,United States,3,United States 3,standard
+USA4,D,USA,United States,4,United States 4,standard
+USA5,D,USA,United States,5,United States 5,standard
+USA6,D,USA,United States,6,United States 6,standard
+USA7,D,USA,United States,7,United States 7,standard
+USA8,D,USA,United States,8,United States 8,standard
+USA9,D,USA,United States,9,United States 9,standard
+USA10,D,USA,United States,10,United States 10,standard
+USA11,D,USA,United States,11,United States 11,standard
+USA12,D,USA,United States,12,United States 12,standard
+USA13,D,USA,United States,13,United States 13,standard
+USA14,D,USA,United States,14,United States 14,standard
+USA15,D,USA,United States,15,United States 15,standard
+USA16,D,USA,United States,16,United States 16,standard
+USA17,D,USA,United States,17,United States 17,standard
+USA18,D,USA,United States,18,United States 18,standard
+USA19,D,USA,United States,19,United States 19,standard
+USA20,D,USA,United States,20,United States 20,standard
+PAR1,D,PAR,Paraguay,1,Paraguay 1,standard
+PAR2,D,PAR,Paraguay,2,Paraguay 2,standard
+PAR3,D,PAR,Paraguay,3,Paraguay 3,standard
+PAR4,D,PAR,Paraguay,4,Paraguay 4,standard
+PAR5,D,PAR,Paraguay,5,Paraguay 5,standard
+PAR6,D,PAR,Paraguay,6,Paraguay 6,standard
+PAR7,D,PAR,Paraguay,7,Paraguay 7,standard
+PAR8,D,PAR,Paraguay,8,Paraguay 8,standard
+PAR9,D,PAR,Paraguay,9,Paraguay 9,standard
+PAR10,D,PAR,Paraguay,10,Paraguay 10,standard
+PAR11,D,PAR,Paraguay,11,Paraguay 11,standard
+PAR12,D,PAR,Paraguay,12,Paraguay 12,standard
+PAR13,D,PAR,Paraguay,13,Paraguay 13,standard
+PAR14,D,PAR,Paraguay,14,Paraguay 14,standard
+PAR15,D,PAR,Paraguay,15,Paraguay 15,standard
+PAR16,D,PAR,Paraguay,16,Paraguay 16,standard
+PAR17,D,PAR,Paraguay,17,Paraguay 17,standard
+PAR18,D,PAR,Paraguay,18,Paraguay 18,standard
+PAR19,D,PAR,Paraguay,19,Paraguay 19,standard
+PAR20,D,PAR,Paraguay,20,Paraguay 20,standard
+AUS1,D,AUS,Australia,1,Australia 1,standard
+AUS2,D,AUS,Australia,2,Australia 2,standard
+AUS3,D,AUS,Australia,3,Australia 3,standard
+AUS4,D,AUS,Australia,4,Australia 4,standard
+AUS5,D,AUS,Australia,5,Australia 5,standard
+AUS6,D,AUS,Australia,6,Australia 6,standard
+AUS7,D,AUS,Australia,7,Australia 7,standard
+AUS8,D,AUS,Australia,8,Australia 8,standard
+AUS9,D,AUS,Australia,9,Australia 9,standard
+AUS10,D,AUS,Australia,10,Australia 10,standard
+AUS11,D,AUS,Australia,11,Australia 11,standard
+AUS12,D,AUS,Australia,12,Australia 12,standard
+AUS13,D,AUS,Australia,13,Australia 13,standard
+AUS14,D,AUS,Australia,14,Australia 14,standard
+AUS15,D,AUS,Australia,15,Australia 15,standard
+AUS16,D,AUS,Australia,16,Australia 16,standard
+AUS17,D,AUS,Australia,17,Australia 17,standard
+AUS18,D,AUS,Australia,18,Australia 18,standard
+AUS19,D,AUS,Australia,19,Australia 19,standard
+AUS20,D,AUS,Australia,20,Australia 20,standard
+TUR1,D,TUR,Turkey,1,Turkey 1,standard
+TUR2,D,TUR,Turkey,2,Turkey 2,standard
+TUR3,D,TUR,Turkey,3,Turkey 3,standard
+TUR4,D,TUR,Turkey,4,Turkey 4,standard
+TUR5,D,TUR,Turkey,5,Turkey 5,standard
+TUR6,D,TUR,Turkey,6,Turkey 6,standard
+TUR7,D,TUR,Turkey,7,Turkey 7,standard
+TUR8,D,TUR,Turkey,8,Turkey 8,standard
+TUR9,D,TUR,Turkey,9,Turkey 9,standard
+TUR10,D,TUR,Turkey,10,Turkey 10,standard
+TUR11,D,TUR,Turkey,11,Turkey 11,standard
+TUR12,D,TUR,Turkey,12,Turkey 12,standard
+TUR13,D,TUR,Turkey,13,Turkey 13,standard
+TUR14,D,TUR,Turkey,14,Turkey 14,standard
+TUR15,D,TUR,Turkey,15,Turkey 15,standard
+TUR16,D,TUR,Turkey,16,Turkey 16,standard
+TUR17,D,TUR,Turkey,17,Turkey 17,standard
+TUR18,D,TUR,Turkey,18,Turkey 18,standard
+TUR19,D,TUR,Turkey,19,Turkey 19,standard
+TUR20,D,TUR,Turkey,20,Turkey 20,standard
+GER1,E,GER,Germany,1,Germany 1,standard
+GER2,E,GER,Germany,2,Germany 2,standard
+GER3,E,GER,Germany,3,Germany 3,standard
+GER4,E,GER,Germany,4,Germany 4,standard
+GER5,E,GER,Germany,5,Germany 5,standard
+GER6,E,GER,Germany,6,Germany 6,standard
+GER7,E,GER,Germany,7,Germany 7,standard
+GER8,E,GER,Germany,8,Germany 8,standard
+GER9,E,GER,Germany,9,Germany 9,standard
+GER10,E,GER,Germany,10,Germany 10,standard
+GER11,E,GER,Germany,11,Germany 11,standard
+GER12,E,GER,Germany,12,Germany 12,standard
+GER13,E,GER,Germany,13,Germany 13,standard
+GER14,E,GER,Germany,14,Germany 14,standard
+GER15,E,GER,Germany,15,Germany 15,standard
+GER16,E,GER,Germany,16,Germany 16,standard
+GER17,E,GER,Germany,17,Germany 17,standard
+GER18,E,GER,Germany,18,Germany 18,standard
+GER19,E,GER,Germany,19,Germany 19,standard
+GER20,E,GER,Germany,20,Germany 20,standard
+CUW1,E,CUW,Curacao,1,Curacao 1,standard
+CUW2,E,CUW,Curacao,2,Curacao 2,standard
+CUW3,E,CUW,Curacao,3,Curacao 3,standard
+CUW4,E,CUW,Curacao,4,Curacao 4,standard
+CUW5,E,CUW,Curacao,5,Curacao 5,standard
+CUW6,E,CUW,Curacao,6,Curacao 6,standard
+CUW7,E,CUW,Curacao,7,Curacao 7,standard
+CUW8,E,CUW,Curacao,8,Curacao 8,standard
+CUW9,E,CUW,Curacao,9,Curacao 9,standard
+CUW10,E,CUW,Curacao,10,Curacao 10,standard
+CUW11,E,CUW,Curacao,11,Curacao 11,standard
+CUW12,E,CUW,Curacao,12,Curacao 12,standard
+CUW13,E,CUW,Curacao,13,Curacao 13,standard
+CUW14,E,CUW,Curacao,14,Curacao 14,standard
+CUW15,E,CUW,Curacao,15,Curacao 15,standard
+CUW16,E,CUW,Curacao,16,Curacao 16,standard
+CUW17,E,CUW,Curacao,17,Curacao 17,standard
+CUW18,E,CUW,Curacao,18,Curacao 18,standard
+CUW19,E,CUW,Curacao,19,Curacao 19,standard
+CUW20,E,CUW,Curacao,20,Curacao 20,standard
+CIV1,E,CIV,Ivory Coast,1,Ivory Coast 1,standard
+CIV2,E,CIV,Ivory Coast,2,Ivory Coast 2,standard
+CIV3,E,CIV,Ivory Coast,3,Ivory Coast 3,standard
+CIV4,E,CIV,Ivory Coast,4,Ivory Coast 4,standard
+CIV5,E,CIV,Ivory Coast,5,Ivory Coast 5,standard
+CIV6,E,CIV,Ivory Coast,6,Ivory Coast 6,standard
+CIV7,E,CIV,Ivory Coast,7,Ivory Coast 7,standard
+CIV8,E,CIV,Ivory Coast,8,Ivory Coast 8,standard
+CIV9,E,CIV,Ivory Coast,9,Ivory Coast 9,standard
+CIV10,E,CIV,Ivory Coast,10,Ivory Coast 10,standard
+CIV11,E,CIV,Ivory Coast,11,Ivory Coast 11,standard
+CIV12,E,CIV,Ivory Coast,12,Ivory Coast 12,standard
+CIV13,E,CIV,Ivory Coast,13,Ivory Coast 13,standard
+CIV14,E,CIV,Ivory Coast,14,Ivory Coast 14,standard
+CIV15,E,CIV,Ivory Coast,15,Ivory Coast 15,standard
+CIV16,E,CIV,Ivory Coast,16,Ivory Coast 16,standard
+CIV17,E,CIV,Ivory Coast,17,Ivory Coast 17,standard
+CIV18,E,CIV,Ivory Coast,18,Ivory Coast 18,standard
+CIV19,E,CIV,Ivory Coast,19,Ivory Coast 19,standard
+CIV20,E,CIV,Ivory Coast,20,Ivory Coast 20,standard
+ECU1,E,ECU,Ecuador,1,Ecuador 1,standard
+ECU2,E,ECU,Ecuador,2,Ecuador 2,standard
+ECU3,E,ECU,Ecuador,3,Ecuador 3,standard
+ECU4,E,ECU,Ecuador,4,Ecuador 4,standard
+ECU5,E,ECU,Ecuador,5,Ecuador 5,standard
+ECU6,E,ECU,Ecuador,6,Ecuador 6,standard
+ECU7,E,ECU,Ecuador,7,Ecuador 7,standard
+ECU8,E,ECU,Ecuador,8,Ecuador 8,standard
+ECU9,E,ECU,Ecuador,9,Ecuador 9,standard
+ECU10,E,ECU,Ecuador,10,Ecuador 10,standard
+ECU11,E,ECU,Ecuador,11,Ecuador 11,standard
+ECU12,E,ECU,Ecuador,12,Ecuador 12,standard
+ECU13,E,ECU,Ecuador,13,Ecuador 13,standard
+ECU14,E,ECU,Ecuador,14,Ecuador 14,standard
+ECU15,E,ECU,Ecuador,15,Ecuador 15,standard
+ECU16,E,ECU,Ecuador,16,Ecuador 16,standard
+ECU17,E,ECU,Ecuador,17,Ecuador 17,standard
+ECU18,E,ECU,Ecuador,18,Ecuador 18,standard
+ECU19,E,ECU,Ecuador,19,Ecuador 19,standard
+ECU20,E,ECU,Ecuador,20,Ecuador 20,standard
+NED1,F,NED,Netherlands,1,Netherlands 1,standard
+NED2,F,NED,Netherlands,2,Netherlands 2,standard
+NED3,F,NED,Netherlands,3,Netherlands 3,standard
+NED4,F,NED,Netherlands,4,Netherlands 4,standard
+NED5,F,NED,Netherlands,5,Netherlands 5,standard
+NED6,F,NED,Netherlands,6,Netherlands 6,standard
+NED7,F,NED,Netherlands,7,Netherlands 7,standard
+NED8,F,NED,Netherlands,8,Netherlands 8,standard
+NED9,F,NED,Netherlands,9,Netherlands 9,standard
+NED10,F,NED,Netherlands,10,Netherlands 10,standard
+NED11,F,NED,Netherlands,11,Netherlands 11,standard
+NED12,F,NED,Netherlands,12,Netherlands 12,standard
+NED13,F,NED,Netherlands,13,Netherlands 13,standard
+NED14,F,NED,Netherlands,14,Netherlands 14,standard
+NED15,F,NED,Netherlands,15,Netherlands 15,standard
+NED16,F,NED,Netherlands,16,Netherlands 16,standard
+NED17,F,NED,Netherlands,17,Netherlands 17,standard
+NED18,F,NED,Netherlands,18,Netherlands 18,standard
+NED19,F,NED,Netherlands,19,Netherlands 19,standard
+NED20,F,NED,Netherlands,20,Netherlands 20,standard
+JAP1,F,JAP,Japan,1,Japan 1,standard
+JAP2,F,JAP,Japan,2,Japan 2,standard
+JAP3,F,JAP,Japan,3,Japan 3,standard
+JAP4,F,JAP,Japan,4,Japan 4,standard
+JAP5,F,JAP,Japan,5,Japan 5,standard
+JAP6,F,JAP,Japan,6,Japan 6,standard
+JAP7,F,JAP,Japan,7,Japan 7,standard
+JAP8,F,JAP,Japan,8,Japan 8,standard
+JAP9,F,JAP,Japan,9,Japan 9,standard
+JAP10,F,JAP,Japan,10,Japan 10,standard
+JAP11,F,JAP,Japan,11,Japan 11,standard
+JAP12,F,JAP,Japan,12,Japan 12,standard
+JAP13,F,JAP,Japan,13,Japan 13,standard
+JAP14,F,JAP,Japan,14,Japan 14,standard
+JAP15,F,JAP,Japan,15,Japan 15,standard
+JAP16,F,JAP,Japan,16,Japan 16,standard
+JAP17,F,JAP,Japan,17,Japan 17,standard
+JAP18,F,JAP,Japan,18,Japan 18,standard
+JAP19,F,JAP,Japan,19,Japan 19,standard
+JAP20,F,JAP,Japan,20,Japan 20,standard
+SWE1,F,SWE,Sweden,1,Sweden 1,standard
+SWE2,F,SWE,Sweden,2,Sweden 2,standard
+SWE3,F,SWE,Sweden,3,Sweden 3,standard
+SWE4,F,SWE,Sweden,4,Sweden 4,standard
+SWE5,F,SWE,Sweden,5,Sweden 5,standard
+SWE6,F,SWE,Sweden,6,Sweden 6,standard
+SWE7,F,SWE,Sweden,7,Sweden 7,standard
+SWE8,F,SWE,Sweden,8,Sweden 8,standard
+SWE9,F,SWE,Sweden,9,Sweden 9,standard
+SWE10,F,SWE,Sweden,10,Sweden 10,standard
+SWE11,F,SWE,Sweden,11,Sweden 11,standard
+SWE12,F,SWE,Sweden,12,Sweden 12,standard
+SWE13,F,SWE,Sweden,13,Sweden 13,standard
+SWE14,F,SWE,Sweden,14,Sweden 14,standard
+SWE15,F,SWE,Sweden,15,Sweden 15,standard
+SWE16,F,SWE,Sweden,16,Sweden 16,standard
+SWE17,F,SWE,Sweden,17,Sweden 17,standard
+SWE18,F,SWE,Sweden,18,Sweden 18,standard
+SWE19,F,SWE,Sweden,19,Sweden 19,standard
+SWE20,F,SWE,Sweden,20,Sweden 20,standard
+TUN1,F,TUN,Tunisia,1,Tunisia 1,standard
+TUN2,F,TUN,Tunisia,2,Tunisia 2,standard
+TUN3,F,TUN,Tunisia,3,Tunisia 3,standard
+TUN4,F,TUN,Tunisia,4,Tunisia 4,standard
+TUN5,F,TUN,Tunisia,5,Tunisia 5,standard
+TUN6,F,TUN,Tunisia,6,Tunisia 6,standard
+TUN7,F,TUN,Tunisia,7,Tunisia 7,standard
+TUN8,F,TUN,Tunisia,8,Tunisia 8,standard
+TUN9,F,TUN,Tunisia,9,Tunisia 9,standard
+TUN10,F,TUN,Tunisia,10,Tunisia 10,standard
+TUN11,F,TUN,Tunisia,11,Tunisia 11,standard
+TUN12,F,TUN,Tunisia,12,Tunisia 12,standard
+TUN13,F,TUN,Tunisia,13,Tunisia 13,standard
+TUN14,F,TUN,Tunisia,14,Tunisia 14,standard
+TUN15,F,TUN,Tunisia,15,Tunisia 15,standard
+TUN16,F,TUN,Tunisia,16,Tunisia 16,standard
+TUN17,F,TUN,Tunisia,17,Tunisia 17,standard
+TUN18,F,TUN,Tunisia,18,Tunisia 18,standard
+TUN19,F,TUN,Tunisia,19,Tunisia 19,standard
+TUN20,F,TUN,Tunisia,20,Tunisia 20,standard
+BEL1,G,BEL,Belgium,1,Belgium 1,standard
+BEL2,G,BEL,Belgium,2,Belgium 2,standard
+BEL3,G,BEL,Belgium,3,Belgium 3,standard
+BEL4,G,BEL,Belgium,4,Belgium 4,standard
+BEL5,G,BEL,Belgium,5,Belgium 5,standard
+BEL6,G,BEL,Belgium,6,Belgium 6,standard
+BEL7,G,BEL,Belgium,7,Belgium 7,standard
+BEL8,G,BEL,Belgium,8,Belgium 8,standard
+BEL9,G,BEL,Belgium,9,Belgium 9,standard
+BEL10,G,BEL,Belgium,10,Belgium 10,standard
+BEL11,G,BEL,Belgium,11,Belgium 11,standard
+BEL12,G,BEL,Belgium,12,Belgium 12,standard
+BEL13,G,BEL,Belgium,13,Belgium 13,standard
+BEL14,G,BEL,Belgium,14,Belgium 14,standard
+BEL15,G,BEL,Belgium,15,Belgium 15,standard
+BEL16,G,BEL,Belgium,16,Belgium 16,standard
+BEL17,G,BEL,Belgium,17,Belgium 17,standard
+BEL18,G,BEL,Belgium,18,Belgium 18,standard
+BEL19,G,BEL,Belgium,19,Belgium 19,standard
+BEL20,G,BEL,Belgium,20,Belgium 20,standard
+EGY1,G,EGY,Egypt,1,Egypt 1,standard
+EGY2,G,EGY,Egypt,2,Egypt 2,standard
+EGY3,G,EGY,Egypt,3,Egypt 3,standard
+EGY4,G,EGY,Egypt,4,Egypt 4,standard
+EGY5,G,EGY,Egypt,5,Egypt 5,standard
+EGY6,G,EGY,Egypt,6,Egypt 6,standard
+EGY7,G,EGY,Egypt,7,Egypt 7,standard
+EGY8,G,EGY,Egypt,8,Egypt 8,standard
+EGY9,G,EGY,Egypt,9,Egypt 9,standard
+EGY10,G,EGY,Egypt,10,Egypt 10,standard
+EGY11,G,EGY,Egypt,11,Egypt 11,standard
+EGY12,G,EGY,Egypt,12,Egypt 12,standard
+EGY13,G,EGY,Egypt,13,Egypt 13,standard
+EGY14,G,EGY,Egypt,14,Egypt 14,standard
+EGY15,G,EGY,Egypt,15,Egypt 15,standard
+EGY16,G,EGY,Egypt,16,Egypt 16,standard
+EGY17,G,EGY,Egypt,17,Egypt 17,standard
+EGY18,G,EGY,Egypt,18,Egypt 18,standard
+EGY19,G,EGY,Egypt,19,Egypt 19,standard
+EGY20,G,EGY,Egypt,20,Egypt 20,standard
+IRN1,G,IRN,Iran,1,Iran 1,standard
+IRN2,G,IRN,Iran,2,Iran 2,standard
+IRN3,G,IRN,Iran,3,Iran 3,standard
+IRN4,G,IRN,Iran,4,Iran 4,standard
+IRN5,G,IRN,Iran,5,Iran 5,standard
+IRN6,G,IRN,Iran,6,Iran 6,standard
+IRN7,G,IRN,Iran,7,Iran 7,standard
+IRN8,G,IRN,Iran,8,Iran 8,standard
+IRN9,G,IRN,Iran,9,Iran 9,standard
+IRN10,G,IRN,Iran,10,Iran 10,standard
+IRN11,G,IRN,Iran,11,Iran 11,standard
+IRN12,G,IRN,Iran,12,Iran 12,standard
+IRN13,G,IRN,Iran,13,Iran 13,standard
+IRN14,G,IRN,Iran,14,Iran 14,standard
+IRN15,G,IRN,Iran,15,Iran 15,standard
+IRN16,G,IRN,Iran,16,Iran 16,standard
+IRN17,G,IRN,Iran,17,Iran 17,standard
+IRN18,G,IRN,Iran,18,Iran 18,standard
+IRN19,G,IRN,Iran,19,Iran 19,standard
+IRN20,G,IRN,Iran,20,Iran 20,standard
+NZL1,G,NZL,New Zealand,1,New Zealand 1,standard
+NZL2,G,NZL,New Zealand,2,New Zealand 2,standard
+NZL3,G,NZL,New Zealand,3,New Zealand 3,standard
+NZL4,G,NZL,New Zealand,4,New Zealand 4,standard
+NZL5,G,NZL,New Zealand,5,New Zealand 5,standard
+NZL6,G,NZL,New Zealand,6,New Zealand 6,standard
+NZL7,G,NZL,New Zealand,7,New Zealand 7,standard
+NZL8,G,NZL,New Zealand,8,New Zealand 8,standard
+NZL9,G,NZL,New Zealand,9,New Zealand 9,standard
+NZL10,G,NZL,New Zealand,10,New Zealand 10,standard
+NZL11,G,NZL,New Zealand,11,New Zealand 11,standard
+NZL12,G,NZL,New Zealand,12,New Zealand 12,standard
+NZL13,G,NZL,New Zealand,13,New Zealand 13,standard
+NZL14,G,NZL,New Zealand,14,New Zealand 14,standard
+NZL15,G,NZL,New Zealand,15,New Zealand 15,standard
+NZL16,G,NZL,New Zealand,16,New Zealand 16,standard
+NZL17,G,NZL,New Zealand,17,New Zealand 17,standard
+NZL18,G,NZL,New Zealand,18,New Zealand 18,standard
+NZL19,G,NZL,New Zealand,19,New Zealand 19,standard
+NZL20,G,NZL,New Zealand,20,New Zealand 20,standard
+ESP1,H,ESP,Spain,1,Spain 1,standard
+ESP2,H,ESP,Spain,2,Spain 2,standard
+ESP3,H,ESP,Spain,3,Spain 3,standard
+ESP4,H,ESP,Spain,4,Spain 4,standard
+ESP5,H,ESP,Spain,5,Spain 5,standard
+ESP6,H,ESP,Spain,6,Spain 6,standard
+ESP7,H,ESP,Spain,7,Spain 7,standard
+ESP8,H,ESP,Spain,8,Spain 8,standard
+ESP9,H,ESP,Spain,9,Spain 9,standard
+ESP10,H,ESP,Spain,10,Spain 10,standard
+ESP11,H,ESP,Spain,11,Spain 11,standard
+ESP12,H,ESP,Spain,12,Spain 12,standard
+ESP13,H,ESP,Spain,13,Spain 13,standard
+ESP14,H,ESP,Spain,14,Spain 14,standard
+ESP15,H,ESP,Spain,15,Spain 15,standard
+ESP16,H,ESP,Spain,16,Spain 16,standard
+ESP17,H,ESP,Spain,17,Spain 17,standard
+ESP18,H,ESP,Spain,18,Spain 18,standard
+ESP19,H,ESP,Spain,19,Spain 19,standard
+ESP20,H,ESP,Spain,20,Spain 20,standard
+CPV1,H,CPV,Cape Verde,1,Cape Verde 1,standard
+CPV2,H,CPV,Cape Verde,2,Cape Verde 2,standard
+CPV3,H,CPV,Cape Verde,3,Cape Verde 3,standard
+CPV4,H,CPV,Cape Verde,4,Cape Verde 4,standard
+CPV5,H,CPV,Cape Verde,5,Cape Verde 5,standard
+CPV6,H,CPV,Cape Verde,6,Cape Verde 6,standard
+CPV7,H,CPV,Cape Verde,7,Cape Verde 7,standard
+CPV8,H,CPV,Cape Verde,8,Cape Verde 8,standard
+CPV9,H,CPV,Cape Verde,9,Cape Verde 9,standard
+CPV10,H,CPV,Cape Verde,10,Cape Verde 10,standard
+CPV11,H,CPV,Cape Verde,11,Cape Verde 11,standard
+CPV12,H,CPV,Cape Verde,12,Cape Verde 12,standard
+CPV13,H,CPV,Cape Verde,13,Cape Verde 13,standard
+CPV14,H,CPV,Cape Verde,14,Cape Verde 14,standard
+CPV15,H,CPV,Cape Verde,15,Cape Verde 15,standard
+CPV16,H,CPV,Cape Verde,16,Cape Verde 16,standard
+CPV17,H,CPV,Cape Verde,17,Cape Verde 17,standard
+CPV18,H,CPV,Cape Verde,18,Cape Verde 18,standard
+CPV19,H,CPV,Cape Verde,19,Cape Verde 19,standard
+CPV20,H,CPV,Cape Verde,20,Cape Verde 20,standard
+KSA1,H,KSA,Saudi Arabia,1,Saudi Arabia 1,standard
+KSA2,H,KSA,Saudi Arabia,2,Saudi Arabia 2,standard
+KSA3,H,KSA,Saudi Arabia,3,Saudi Arabia 3,standard
+KSA4,H,KSA,Saudi Arabia,4,Saudi Arabia 4,standard
+KSA5,H,KSA,Saudi Arabia,5,Saudi Arabia 5,standard
+KSA6,H,KSA,Saudi Arabia,6,Saudi Arabia 6,standard
+KSA7,H,KSA,Saudi Arabia,7,Saudi Arabia 7,standard
+KSA8,H,KSA,Saudi Arabia,8,Saudi Arabia 8,standard
+KSA9,H,KSA,Saudi Arabia,9,Saudi Arabia 9,standard
+KSA10,H,KSA,Saudi Arabia,10,Saudi Arabia 10,standard
+KSA11,H,KSA,Saudi Arabia,11,Saudi Arabia 11,standard
+KSA12,H,KSA,Saudi Arabia,12,Saudi Arabia 12,standard
+KSA13,H,KSA,Saudi Arabia,13,Saudi Arabia 13,standard
+KSA14,H,KSA,Saudi Arabia,14,Saudi Arabia 14,standard
+KSA15,H,KSA,Saudi Arabia,15,Saudi Arabia 15,standard
+KSA16,H,KSA,Saudi Arabia,16,Saudi Arabia 16,standard
+KSA17,H,KSA,Saudi Arabia,17,Saudi Arabia 17,standard
+KSA18,H,KSA,Saudi Arabia,18,Saudi Arabia 18,standard
+KSA19,H,KSA,Saudi Arabia,19,Saudi Arabia 19,standard
+KSA20,H,KSA,Saudi Arabia,20,Saudi Arabia 20,standard
+URU1,H,URU,Uruguay,1,Uruguay 1,standard
+URU2,H,URU,Uruguay,2,Uruguay 2,standard
+URU3,H,URU,Uruguay,3,Uruguay 3,standard
+URU4,H,URU,Uruguay,4,Uruguay 4,standard
+URU5,H,URU,Uruguay,5,Uruguay 5,standard
+URU6,H,URU,Uruguay,6,Uruguay 6,standard
+URU7,H,URU,Uruguay,7,Uruguay 7,standard
+URU8,H,URU,Uruguay,8,Uruguay 8,standard
+URU9,H,URU,Uruguay,9,Uruguay 9,standard
+URU10,H,URU,Uruguay,10,Uruguay 10,standard
+URU11,H,URU,Uruguay,11,Uruguay 11,standard
+URU12,H,URU,Uruguay,12,Uruguay 12,standard
+URU13,H,URU,Uruguay,13,Uruguay 13,standard
+URU14,H,URU,Uruguay,14,Uruguay 14,standard
+URU15,H,URU,Uruguay,15,Uruguay 15,standard
+URU16,H,URU,Uruguay,16,Uruguay 16,standard
+URU17,H,URU,Uruguay,17,Uruguay 17,standard
+URU18,H,URU,Uruguay,18,Uruguay 18,standard
+URU19,H,URU,Uruguay,19,Uruguay 19,standard
+URU20,H,URU,Uruguay,20,Uruguay 20,standard
+FRA1,I,FRA,France,1,France 1,standard
+FRA2,I,FRA,France,2,France 2,standard
+FRA3,I,FRA,France,3,France 3,standard
+FRA4,I,FRA,France,4,France 4,standard
+FRA5,I,FRA,France,5,France 5,standard
+FRA6,I,FRA,France,6,France 6,standard
+FRA7,I,FRA,France,7,France 7,standard
+FRA8,I,FRA,France,8,France 8,standard
+FRA9,I,FRA,France,9,France 9,standard
+FRA10,I,FRA,France,10,France 10,standard
+FRA11,I,FRA,France,11,France 11,standard
+FRA12,I,FRA,France,12,France 12,standard
+FRA13,I,FRA,France,13,France 13,standard
+FRA14,I,FRA,France,14,France 14,standard
+FRA15,I,FRA,France,15,France 15,standard
+FRA16,I,FRA,France,16,France 16,standard
+FRA17,I,FRA,France,17,France 17,standard
+FRA18,I,FRA,France,18,France 18,standard
+FRA19,I,FRA,France,19,France 19,standard
+FRA20,I,FRA,France,20,France 20,standard
+SEN1,I,SEN,Senegal,1,Senegal 1,standard
+SEN2,I,SEN,Senegal,2,Senegal 2,standard
+SEN3,I,SEN,Senegal,3,Senegal 3,standard
+SEN4,I,SEN,Senegal,4,Senegal 4,standard
+SEN5,I,SEN,Senegal,5,Senegal 5,standard
+SEN6,I,SEN,Senegal,6,Senegal 6,standard
+SEN7,I,SEN,Senegal,7,Senegal 7,standard
+SEN8,I,SEN,Senegal,8,Senegal 8,standard
+SEN9,I,SEN,Senegal,9,Senegal 9,standard
+SEN10,I,SEN,Senegal,10,Senegal 10,standard
+SEN11,I,SEN,Senegal,11,Senegal 11,standard
+SEN12,I,SEN,Senegal,12,Senegal 12,standard
+SEN13,I,SEN,Senegal,13,Senegal 13,standard
+SEN14,I,SEN,Senegal,14,Senegal 14,standard
+SEN15,I,SEN,Senegal,15,Senegal 15,standard
+SEN16,I,SEN,Senegal,16,Senegal 16,standard
+SEN17,I,SEN,Senegal,17,Senegal 17,standard
+SEN18,I,SEN,Senegal,18,Senegal 18,standard
+SEN19,I,SEN,Senegal,19,Senegal 19,standard
+SEN20,I,SEN,Senegal,20,Senegal 20,standard
+IRQ1,I,IRQ,Iraq,1,Iraq 1,standard
+IRQ2,I,IRQ,Iraq,2,Iraq 2,standard
+IRQ3,I,IRQ,Iraq,3,Iraq 3,standard
+IRQ4,I,IRQ,Iraq,4,Iraq 4,standard
+IRQ5,I,IRQ,Iraq,5,Iraq 5,standard
+IRQ6,I,IRQ,Iraq,6,Iraq 6,standard
+IRQ7,I,IRQ,Iraq,7,Iraq 7,standard
+IRQ8,I,IRQ,Iraq,8,Iraq 8,standard
+IRQ9,I,IRQ,Iraq,9,Iraq 9,standard
+IRQ10,I,IRQ,Iraq,10,Iraq 10,standard
+IRQ11,I,IRQ,Iraq,11,Iraq 11,standard
+IRQ12,I,IRQ,Iraq,12,Iraq 12,standard
+IRQ13,I,IRQ,Iraq,13,Iraq 13,standard
+IRQ14,I,IRQ,Iraq,14,Iraq 14,standard
+IRQ15,I,IRQ,Iraq,15,Iraq 15,standard
+IRQ16,I,IRQ,Iraq,16,Iraq 16,standard
+IRQ17,I,IRQ,Iraq,17,Iraq 17,standard
+IRQ18,I,IRQ,Iraq,18,Iraq 18,standard
+IRQ19,I,IRQ,Iraq,19,Iraq 19,standard
+IRQ20,I,IRQ,Iraq,20,Iraq 20,standard
+NOR1,I,NOR,Norway,1,Norway 1,standard
+NOR2,I,NOR,Norway,2,Norway 2,standard
+NOR3,I,NOR,Norway,3,Norway 3,standard
+NOR4,I,NOR,Norway,4,Norway 4,standard
+NOR5,I,NOR,Norway,5,Norway 5,standard
+NOR6,I,NOR,Norway,6,Norway 6,standard
+NOR7,I,NOR,Norway,7,Norway 7,standard
+NOR8,I,NOR,Norway,8,Norway 8,standard
+NOR9,I,NOR,Norway,9,Norway 9,standard
+NOR10,I,NOR,Norway,10,Norway 10,standard
+NOR11,I,NOR,Norway,11,Norway 11,standard
+NOR12,I,NOR,Norway,12,Norway 12,standard
+NOR13,I,NOR,Norway,13,Norway 13,standard
+NOR14,I,NOR,Norway,14,Norway 14,standard
+NOR15,I,NOR,Norway,15,Norway 15,standard
+NOR16,I,NOR,Norway,16,Norway 16,standard
+NOR17,I,NOR,Norway,17,Norway 17,standard
+NOR18,I,NOR,Norway,18,Norway 18,standard
+NOR19,I,NOR,Norway,19,Norway 19,standard
+NOR20,I,NOR,Norway,20,Norway 20,standard
+ARG1,J,ARG,Argentina,1,Argentina 1,standard
+ARG2,J,ARG,Argentina,2,Argentina 2,standard
+ARG3,J,ARG,Argentina,3,Argentina 3,standard
+ARG4,J,ARG,Argentina,4,Argentina 4,standard
+ARG5,J,ARG,Argentina,5,Argentina 5,standard
+ARG6,J,ARG,Argentina,6,Argentina 6,standard
+ARG7,J,ARG,Argentina,7,Argentina 7,standard
+ARG8,J,ARG,Argentina,8,Argentina 8,standard
+ARG9,J,ARG,Argentina,9,Argentina 9,standard
+ARG10,J,ARG,Argentina,10,Argentina 10,standard
+ARG11,J,ARG,Argentina,11,Argentina 11,standard
+ARG12,J,ARG,Argentina,12,Argentina 12,standard
+ARG13,J,ARG,Argentina,13,Argentina 13,standard
+ARG14,J,ARG,Argentina,14,Argentina 14,standard
+ARG15,J,ARG,Argentina,15,Argentina 15,standard
+ARG16,J,ARG,Argentina,16,Argentina 16,standard
+ARG17,J,ARG,Argentina,17,Argentina 17,standard
+ARG18,J,ARG,Argentina,18,Argentina 18,standard
+ARG19,J,ARG,Argentina,19,Argentina 19,standard
+ARG20,J,ARG,Argentina,20,Argentina 20,standard
+ALG1,J,ALG,Algeria,1,Algeria 1,standard
+ALG2,J,ALG,Algeria,2,Algeria 2,standard
+ALG3,J,ALG,Algeria,3,Algeria 3,standard
+ALG4,J,ALG,Algeria,4,Algeria 4,standard
+ALG5,J,ALG,Algeria,5,Algeria 5,standard
+ALG6,J,ALG,Algeria,6,Algeria 6,standard
+ALG7,J,ALG,Algeria,7,Algeria 7,standard
+ALG8,J,ALG,Algeria,8,Algeria 8,standard
+ALG9,J,ALG,Algeria,9,Algeria 9,standard
+ALG10,J,ALG,Algeria,10,Algeria 10,standard
+ALG11,J,ALG,Algeria,11,Algeria 11,standard
+ALG12,J,ALG,Algeria,12,Algeria 12,standard
+ALG13,J,ALG,Algeria,13,Algeria 13,standard
+ALG14,J,ALG,Algeria,14,Algeria 14,standard
+ALG15,J,ALG,Algeria,15,Algeria 15,standard
+ALG16,J,ALG,Algeria,16,Algeria 16,standard
+ALG17,J,ALG,Algeria,17,Algeria 17,standard
+ALG18,J,ALG,Algeria,18,Algeria 18,standard
+ALG19,J,ALG,Algeria,19,Algeria 19,standard
+ALG20,J,ALG,Algeria,20,Algeria 20,standard
+AUT1,J,AUT,Austria,1,Austria 1,standard
+AUT2,J,AUT,Austria,2,Austria 2,standard
+AUT3,J,AUT,Austria,3,Austria 3,standard
+AUT4,J,AUT,Austria,4,Austria 4,standard
+AUT5,J,AUT,Austria,5,Austria 5,standard
+AUT6,J,AUT,Austria,6,Austria 6,standard
+AUT7,J,AUT,Austria,7,Austria 7,standard
+AUT8,J,AUT,Austria,8,Austria 8,standard
+AUT9,J,AUT,Austria,9,Austria 9,standard
+AUT10,J,AUT,Austria,10,Austria 10,standard
+AUT11,J,AUT,Austria,11,Austria 11,standard
+AUT12,J,AUT,Austria,12,Austria 12,standard
+AUT13,J,AUT,Austria,13,Austria 13,standard
+AUT14,J,AUT,Austria,14,Austria 14,standard
+AUT15,J,AUT,Austria,15,Austria 15,standard
+AUT16,J,AUT,Austria,16,Austria 16,standard
+AUT17,J,AUT,Austria,17,Austria 17,standard
+AUT18,J,AUT,Austria,18,Austria 18,standard
+AUT19,J,AUT,Austria,19,Austria 19,standard
+AUT20,J,AUT,Austria,20,Austria 20,standard
+JOR1,J,JOR,Jordan,1,Jordan 1,standard
+JOR2,J,JOR,Jordan,2,Jordan 2,standard
+JOR3,J,JOR,Jordan,3,Jordan 3,standard
+JOR4,J,JOR,Jordan,4,Jordan 4,standard
+JOR5,J,JOR,Jordan,5,Jordan 5,standard
+JOR6,J,JOR,Jordan,6,Jordan 6,standard
+JOR7,J,JOR,Jordan,7,Jordan 7,standard
+JOR8,J,JOR,Jordan,8,Jordan 8,standard
+JOR9,J,JOR,Jordan,9,Jordan 9,standard
+JOR10,J,JOR,Jordan,10,Jordan 10,standard
+JOR11,J,JOR,Jordan,11,Jordan 11,standard
+JOR12,J,JOR,Jordan,12,Jordan 12,standard
+JOR13,J,JOR,Jordan,13,Jordan 13,standard
+JOR14,J,JOR,Jordan,14,Jordan 14,standard
+JOR15,J,JOR,Jordan,15,Jordan 15,standard
+JOR16,J,JOR,Jordan,16,Jordan 16,standard
+JOR17,J,JOR,Jordan,17,Jordan 17,standard
+JOR18,J,JOR,Jordan,18,Jordan 18,standard
+JOR19,J,JOR,Jordan,19,Jordan 19,standard
+JOR20,J,JOR,Jordan,20,Jordan 20,standard
+POR1,K,POR,Portugal,1,Portugal 1,standard
+POR2,K,POR,Portugal,2,Portugal 2,standard
+POR3,K,POR,Portugal,3,Portugal 3,standard
+POR4,K,POR,Portugal,4,Portugal 4,standard
+POR5,K,POR,Portugal,5,Portugal 5,standard
+POR6,K,POR,Portugal,6,Portugal 6,standard
+POR7,K,POR,Portugal,7,Portugal 7,standard
+POR8,K,POR,Portugal,8,Portugal 8,standard
+POR9,K,POR,Portugal,9,Portugal 9,standard
+POR10,K,POR,Portugal,10,Portugal 10,standard
+POR11,K,POR,Portugal,11,Portugal 11,standard
+POR12,K,POR,Portugal,12,Portugal 12,standard
+POR13,K,POR,Portugal,13,Portugal 13,standard
+POR14,K,POR,Portugal,14,Portugal 14,standard
+POR15,K,POR,Portugal,15,Portugal 15,standard
+POR16,K,POR,Portugal,16,Portugal 16,standard
+POR17,K,POR,Portugal,17,Portugal 17,standard
+POR18,K,POR,Portugal,18,Portugal 18,standard
+POR19,K,POR,Portugal,19,Portugal 19,standard
+POR20,K,POR,Portugal,20,Portugal 20,standard
+COD1,K,COD,DR Congo,1,DR Congo 1,standard
+COD2,K,COD,DR Congo,2,DR Congo 2,standard
+COD3,K,COD,DR Congo,3,DR Congo 3,standard
+COD4,K,COD,DR Congo,4,DR Congo 4,standard
+COD5,K,COD,DR Congo,5,DR Congo 5,standard
+COD6,K,COD,DR Congo,6,DR Congo 6,standard
+COD7,K,COD,DR Congo,7,DR Congo 7,standard
+COD8,K,COD,DR Congo,8,DR Congo 8,standard
+COD9,K,COD,DR Congo,9,DR Congo 9,standard
+COD10,K,COD,DR Congo,10,DR Congo 10,standard
+COD11,K,COD,DR Congo,11,DR Congo 11,standard
+COD12,K,COD,DR Congo,12,DR Congo 12,standard
+COD13,K,COD,DR Congo,13,DR Congo 13,standard
+COD14,K,COD,DR Congo,14,DR Congo 14,standard
+COD15,K,COD,DR Congo,15,DR Congo 15,standard
+COD16,K,COD,DR Congo,16,DR Congo 16,standard
+COD17,K,COD,DR Congo,17,DR Congo 17,standard
+COD18,K,COD,DR Congo,18,DR Congo 18,standard
+COD19,K,COD,DR Congo,19,DR Congo 19,standard
+COD20,K,COD,DR Congo,20,DR Congo 20,standard
+UZB1,K,UZB,Uzbekistan,1,Uzbekistan 1,standard
+UZB2,K,UZB,Uzbekistan,2,Uzbekistan 2,standard
+UZB3,K,UZB,Uzbekistan,3,Uzbekistan 3,standard
+UZB4,K,UZB,Uzbekistan,4,Uzbekistan 4,standard
+UZB5,K,UZB,Uzbekistan,5,Uzbekistan 5,standard
+UZB6,K,UZB,Uzbekistan,6,Uzbekistan 6,standard
+UZB7,K,UZB,Uzbekistan,7,Uzbekistan 7,standard
+UZB8,K,UZB,Uzbekistan,8,Uzbekistan 8,standard
+UZB9,K,UZB,Uzbekistan,9,Uzbekistan 9,standard
+UZB10,K,UZB,Uzbekistan,10,Uzbekistan 10,standard
+UZB11,K,UZB,Uzbekistan,11,Uzbekistan 11,standard
+UZB12,K,UZB,Uzbekistan,12,Uzbekistan 12,standard
+UZB13,K,UZB,Uzbekistan,13,Uzbekistan 13,standard
+UZB14,K,UZB,Uzbekistan,14,Uzbekistan 14,standard
+UZB15,K,UZB,Uzbekistan,15,Uzbekistan 15,standard
+UZB16,K,UZB,Uzbekistan,16,Uzbekistan 16,standard
+UZB17,K,UZB,Uzbekistan,17,Uzbekistan 17,standard
+UZB18,K,UZB,Uzbekistan,18,Uzbekistan 18,standard
+UZB19,K,UZB,Uzbekistan,19,Uzbekistan 19,standard
+UZB20,K,UZB,Uzbekistan,20,Uzbekistan 20,standard
+COL1,K,COL,Colombia,1,Colombia 1,standard
+COL2,K,COL,Colombia,2,Colombia 2,standard
+COL3,K,COL,Colombia,3,Colombia 3,standard
+COL4,K,COL,Colombia,4,Colombia 4,standard
+COL5,K,COL,Colombia,5,Colombia 5,standard
+COL6,K,COL,Colombia,6,Colombia 6,standard
+COL7,K,COL,Colombia,7,Colombia 7,standard
+COL8,K,COL,Colombia,8,Colombia 8,standard
+COL9,K,COL,Colombia,9,Colombia 9,standard
+COL10,K,COL,Colombia,10,Colombia 10,standard
+COL11,K,COL,Colombia,11,Colombia 11,standard
+COL12,K,COL,Colombia,12,Colombia 12,standard
+COL13,K,COL,Colombia,13,Colombia 13,standard
+COL14,K,COL,Colombia,14,Colombia 14,standard
+COL15,K,COL,Colombia,15,Colombia 15,standard
+COL16,K,COL,Colombia,16,Colombia 16,standard
+COL17,K,COL,Colombia,17,Colombia 17,standard
+COL18,K,COL,Colombia,18,Colombia 18,standard
+COL19,K,COL,Colombia,19,Colombia 19,standard
+COL20,K,COL,Colombia,20,Colombia 20,standard
+ENG1,L,ENG,England,1,England 1,standard
+ENG2,L,ENG,England,2,England 2,standard
+ENG3,L,ENG,England,3,England 3,standard
+ENG4,L,ENG,England,4,England 4,standard
+ENG5,L,ENG,England,5,England 5,standard
+ENG6,L,ENG,England,6,England 6,standard
+ENG7,L,ENG,England,7,England 7,standard
+ENG8,L,ENG,England,8,England 8,standard
+ENG9,L,ENG,England,9,England 9,standard
+ENG10,L,ENG,England,10,England 10,standard
+ENG11,L,ENG,England,11,England 11,standard
+ENG12,L,ENG,England,12,England 12,standard
+ENG13,L,ENG,England,13,England 13,standard
+ENG14,L,ENG,England,14,England 14,standard
+ENG15,L,ENG,England,15,England 15,standard
+ENG16,L,ENG,England,16,England 16,standard
+ENG17,L,ENG,England,17,England 17,standard
+ENG18,L,ENG,England,18,England 18,standard
+ENG19,L,ENG,England,19,England 19,standard
+ENG20,L,ENG,England,20,England 20,standard
+CRO1,L,CRO,Croatia,1,Croatia 1,standard
+CRO2,L,CRO,Croatia,2,Croatia 2,standard
+CRO3,L,CRO,Croatia,3,Croatia 3,standard
+CRO4,L,CRO,Croatia,4,Croatia 4,standard
+CRO5,L,CRO,Croatia,5,Croatia 5,standard
+CRO6,L,CRO,Croatia,6,Croatia 6,standard
+CRO7,L,CRO,Croatia,7,Croatia 7,standard
+CRO8,L,CRO,Croatia,8,Croatia 8,standard
+CRO9,L,CRO,Croatia,9,Croatia 9,standard
+CRO10,L,CRO,Croatia,10,Croatia 10,standard
+CRO11,L,CRO,Croatia,11,Croatia 11,standard
+CRO12,L,CRO,Croatia,12,Croatia 12,standard
+CRO13,L,CRO,Croatia,13,Croatia 13,standard
+CRO14,L,CRO,Croatia,14,Croatia 14,standard
+CRO15,L,CRO,Croatia,15,Croatia 15,standard
+CRO16,L,CRO,Croatia,16,Croatia 16,standard
+CRO17,L,CRO,Croatia,17,Croatia 17,standard
+CRO18,L,CRO,Croatia,18,Croatia 18,standard
+CRO19,L,CRO,Croatia,19,Croatia 19,standard
+CRO20,L,CRO,Croatia,20,Croatia 20,standard
+GHA1,L,GHA,Ghana,1,Ghana 1,standard
+GHA2,L,GHA,Ghana,2,Ghana 2,standard
+GHA3,L,GHA,Ghana,3,Ghana 3,standard
+GHA4,L,GHA,Ghana,4,Ghana 4,standard
+GHA5,L,GHA,Ghana,5,Ghana 5,standard
+GHA6,L,GHA,Ghana,6,Ghana 6,standard
+GHA7,L,GHA,Ghana,7,Ghana 7,standard
+GHA8,L,GHA,Ghana,8,Ghana 8,standard
+GHA9,L,GHA,Ghana,9,Ghana 9,standard
+GHA10,L,GHA,Ghana,10,Ghana 10,standard
+GHA11,L,GHA,Ghana,11,Ghana 11,standard
+GHA12,L,GHA,Ghana,12,Ghana 12,standard
+GHA13,L,GHA,Ghana,13,Ghana 13,standard
+GHA14,L,GHA,Ghana,14,Ghana 14,standard
+GHA15,L,GHA,Ghana,15,Ghana 15,standard
+GHA16,L,GHA,Ghana,16,Ghana 16,standard
+GHA17,L,GHA,Ghana,17,Ghana 17,standard
+GHA18,L,GHA,Ghana,18,Ghana 18,standard
+GHA19,L,GHA,Ghana,19,Ghana 19,standard
+GHA20,L,GHA,Ghana,20,Ghana 20,standard
+PAN1,L,PAN,Panama,1,Panama 1,standard
+PAN2,L,PAN,Panama,2,Panama 2,standard
+PAN3,L,PAN,Panama,3,Panama 3,standard
+PAN4,L,PAN,Panama,4,Panama 4,standard
+PAN5,L,PAN,Panama,5,Panama 5,standard
+PAN6,L,PAN,Panama,6,Panama 6,standard
+PAN7,L,PAN,Panama,7,Panama 7,standard
+PAN8,L,PAN,Panama,8,Panama 8,standard
+PAN9,L,PAN,Panama,9,Panama 9,standard
+PAN10,L,PAN,Panama,10,Panama 10,standard
+PAN11,L,PAN,Panama,11,Panama 11,standard
+PAN12,L,PAN,Panama,12,Panama 12,standard
+PAN13,L,PAN,Panama,13,Panama 13,standard
+PAN14,L,PAN,Panama,14,Panama 14,standard
+PAN15,L,PAN,Panama,15,Panama 15,standard
+PAN16,L,PAN,Panama,16,Panama 16,standard
+PAN17,L,PAN,Panama,17,Panama 17,standard
+PAN18,L,PAN,Panama,18,Panama 18,standard
+PAN19,L,PAN,Panama,19,Panama 19,standard
+PAN20,L,PAN,Panama,20,Panama 20,standard
