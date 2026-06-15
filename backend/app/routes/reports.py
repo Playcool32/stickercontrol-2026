@@ -33,6 +33,12 @@ def _all_stickers_with_status(db: Session, user_id: int):
     return [(s, to_sticker_out(s, entry_map.get(s.id))) for s in stickers]
 
 
+def _format_number(number: int) -> str:
+    """El Logo Oficial Mundial 2026 tiene number=0 pero code="00"; en los
+    textos de faltantes/repetidas debe mostrarse como "00", no "0"."""
+    return "00" if number == 0 else str(number)
+
+
 def _country_sort_key(country_code: str, group: str | None) -> tuple:
     """Especiales del Mundial (group=None, ej. FWC) primero; despues
     grupos A-L en orden alfabetico y, dentro de cada grupo, segun
@@ -120,7 +126,7 @@ def get_missing(
         by_country_list.append(
             MissingCountry(country_code=country_code, country_name=data["country_name"], numbers=numbers)
         )
-        lines.append(f"{country_code}: " + ", ".join(str(n) for n in numbers))
+        lines.append(f"{country_code}: " + ", ".join(_format_number(n) for n in numbers))
 
     text = "\n".join(lines) if by_country_list else "FALTANTES:\n(sin faltantes)"
     return MissingResponse(by_country=by_country_list, text=text)
@@ -154,7 +160,7 @@ def get_duplicates(
                 items=[DuplicateItem(number=n, quantity=q) for n, q in items],
             )
         )
-        parts = [f"{n}(x{q})" if q > 1 else str(n) for n, q in items]
+        parts = [f"{_format_number(n)}(x{q})" if q > 1 else _format_number(n) for n, q in items]
         lines.append(f"{country_code}: " + ", ".join(parts))
 
     text = "\n".join(lines) if by_country_list else "REPETIDAS:\n(sin repetidas)"

@@ -23,12 +23,12 @@ const NAV_ITEMS = [
 export default function Layout() {
   return (
     <div className="flex min-h-screen flex-col bg-gray-50">
-      <main className="mx-auto flex-1 w-full max-w-2xl p-4 pb-24">
+      <main className="w-full flex-1 p-4 pb-24 md:mx-auto md:max-w-2xl">
         <Outlet />
       </main>
 
       <nav className="fixed bottom-0 left-0 right-0 border-t border-gray-100 bg-white shadow-[0_-2px_12px_rgba(0,0,0,0.06)]">
-        <div className="mx-auto grid max-w-2xl grid-cols-7">
+        <div className="mx-auto grid grid-cols-7 md:max-w-2xl">
           {NAV_ITEMS.map((item) => {
             const Icon = item.icon;
             return (

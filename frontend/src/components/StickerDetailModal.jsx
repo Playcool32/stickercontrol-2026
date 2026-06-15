@@ -23,7 +23,7 @@ export default function StickerDetailModal({ sticker, onClose, onAction, onSaveN
       onClick={onClose}
     >
       <div
-        className="max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-t-2xl bg-gray-50 p-4 shadow-xl sm:rounded-2xl"
+        className="max-h-[90vh] w-full overflow-y-auto rounded-t-2xl bg-gray-50 p-4 shadow-xl sm:rounded-2xl md:max-w-lg"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="mb-2 flex justify-end">

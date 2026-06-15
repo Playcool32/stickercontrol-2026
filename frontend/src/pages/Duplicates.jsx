@@ -53,7 +53,10 @@ export default function Duplicates() {
                 key={item.number}
                 className="rounded-full bg-yellow-50 px-2 py-1 text-xs font-semibold text-yellow-700"
               >
-                {item.quantity > 1 ? `${item.number} (x${item.quantity})` : item.number}
+                {(() => {
+                  const label = item.number === 0 ? "00" : item.number;
+                  return item.quantity > 1 ? `${label} (x${item.quantity})` : label;
+                })()}
               </span>
             ))}
           </div>

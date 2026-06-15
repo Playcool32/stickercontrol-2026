@@ -53,7 +53,7 @@ export default function Missing() {
                 key={number}
                 className="rounded-full bg-red-50 px-2 py-1 text-xs font-semibold text-faltante"
               >
-                {number}
+                {number === 0 ? "00" : number}
               </span>
             ))}
           </div>
