@@ -1,4 +1,4 @@
-code,group,country_code,country_name,number,player_name_or_detail,type
+﻿code,group,country_code,country_name,number,player_name_or_detail,type
 00,,FWC,FIFA World Cup 2026,0,Logo Oficial Mundial 2026,logo
 FWC1,,FWC,FIFA World Cup 2026,1,Especial FIFA 1,special
 FWC2,,FWC,FIFA World Cup 2026,2,Especial FIFA 2,special
@@ -439,26 +439,26 @@ NED17,F,NED,Netherlands,17,Netherlands 17,standard
 NED18,F,NED,Netherlands,18,Netherlands 18,standard
 NED19,F,NED,Netherlands,19,Netherlands 19,standard
 NED20,F,NED,Netherlands,20,Netherlands 20,standard
-JAP1,F,JAP,Japan,1,Japan 1,standard
-JAP2,F,JAP,Japan,2,Japan 2,standard
-JAP3,F,JAP,Japan,3,Japan 3,standard
-JAP4,F,JAP,Japan,4,Japan 4,standard
-JAP5,F,JAP,Japan,5,Japan 5,standard
-JAP6,F,JAP,Japan,6,Japan 6,standard
-JAP7,F,JAP,Japan,7,Japan 7,standard
-JAP8,F,JAP,Japan,8,Japan 8,standard
-JAP9,F,JAP,Japan,9,Japan 9,standard
-JAP10,F,JAP,Japan,10,Japan 10,standard
-JAP11,F,JAP,Japan,11,Japan 11,standard
-JAP12,F,JAP,Japan,12,Japan 12,standard
-JAP13,F,JAP,Japan,13,Japan 13,standard
-JAP14,F,JAP,Japan,14,Japan 14,standard
-JAP15,F,JAP,Japan,15,Japan 15,standard
-JAP16,F,JAP,Japan,16,Japan 16,standard
-JAP17,F,JAP,Japan,17,Japan 17,standard
-JAP18,F,JAP,Japan,18,Japan 18,standard
-JAP19,F,JAP,Japan,19,Japan 19,standard
-JAP20,F,JAP,Japan,20,Japan 20,standard
+JPN1,F,JPN,Japan,1,Japan 1,standard
+JPN2,F,JPN,Japan,2,Japan 2,standard
+JPN3,F,JPN,Japan,3,Japan 3,standard
+JPN4,F,JPN,Japan,4,Japan 4,standard
+JPN5,F,JPN,Japan,5,Japan 5,standard
+JPN6,F,JPN,Japan,6,Japan 6,standard
+JPN7,F,JPN,Japan,7,Japan 7,standard
+JPN8,F,JPN,Japan,8,Japan 8,standard
+JPN9,F,JPN,Japan,9,Japan 9,standard
+JPN10,F,JPN,Japan,10,Japan 10,standard
+JPN11,F,JPN,Japan,11,Japan 11,standard
+JPN12,F,JPN,Japan,12,Japan 12,standard
+JPN13,F,JPN,Japan,13,Japan 13,standard
+JPN14,F,JPN,Japan,14,Japan 14,standard
+JPN15,F,JPN,Japan,15,Japan 15,standard
+JPN16,F,JPN,Japan,16,Japan 16,standard
+JPN17,F,JPN,Japan,17,Japan 17,standard
+JPN18,F,JPN,Japan,18,Japan 18,standard
+JPN19,F,JPN,Japan,19,Japan 19,standard
+JPN20,F,JPN,Japan,20,Japan 20,standard
 SWE1,F,SWE,Sweden,1,Sweden 1,standard
 SWE2,F,SWE,Sweden,2,Sweden 2,standard
 SWE3,F,SWE,Sweden,3,Sweden 3,standard

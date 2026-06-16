@@ -198,11 +198,11 @@
     "album_order": 1
   },
   {
-    "fifa_code": "JAP",
+    "fifa_code": "JPN",
     "iso_code": "JP",
     "group": "F",
     "name": "Japan",
-    "flag_path": "/flags/JAP.png",
+    "flag_path": "/flags/JPN.png",
     "flag_source_url": "https://flagcdn.com/w160/jp.png",
     "album_order": 2
   },
@@ -267,7 +267,7 @@
     "name": "Spain",
     "flag_path": "/flags/ESP.png",
     "flag_source_url": "https://flagcdn.com/w160/es.png",
-    "album_order": 3
+    "album_order": 1
   },
   {
     "fifa_code": "CPV",
@@ -276,7 +276,7 @@
     "name": "Cape Verde",
     "flag_path": "/flags/CPV.png",
     "flag_source_url": "https://flagcdn.com/w160/cv.png",
-    "album_order": 1
+    "album_order": 2
   },
   {
     "fifa_code": "KSA",
@@ -285,7 +285,7 @@
     "name": "Saudi Arabia",
     "flag_path": "/flags/KSA.png",
     "flag_source_url": "https://flagcdn.com/w160/sa.png",
-    "album_order": 2
+    "album_order": 3
   },
   {
     "fifa_code": "URU",
@@ -312,7 +312,7 @@
     "name": "Senegal",
     "flag_path": "/flags/SEN.png",
     "flag_source_url": "https://flagcdn.com/w160/sn.png",
-    "album_order": 4
+    "album_order": 2
   },
   {
     "fifa_code": "IRQ",
@@ -321,7 +321,7 @@
     "name": "Iraq",
     "flag_path": "/flags/IRQ.png",
     "flag_source_url": "https://flagcdn.com/w160/iq.png",
-    "album_order": 2
+    "album_order": 3
   },
   {
     "fifa_code": "NOR",
@@ -330,7 +330,7 @@
     "name": "Norway",
     "flag_path": "/flags/NOR.png",
     "flag_source_url": "https://flagcdn.com/w160/no.png",
-    "album_order": 3
+    "album_order": 4
   },
   {
     "fifa_code": "ARG",
@@ -429,7 +429,7 @@
     "name": "Ghana",
     "flag_path": "/flags/GHA.png",
     "flag_source_url": "https://flagcdn.com/w160/gh.png",
-    "album_order": 4
+    "album_order": 3
   },
   {
     "fifa_code": "PAN",
@@ -438,6 +438,6 @@
     "name": "Panama",
     "flag_path": "/flags/PAN.png",
     "flag_source_url": "https://flagcdn.com/w160/pa.png",
-    "album_order": 3
+    "album_order": 4
   }
 ]
