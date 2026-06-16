@@ -9,6 +9,7 @@ import Login from "./pages/Login.jsx";
 import Missing from "./pages/Missing.jsx";
 import Nearby from "./pages/Nearby.jsx";
 import Search from "./pages/Search.jsx";
+import ShareView from "./pages/ShareView.jsx";
 import Trades from "./pages/Trades.jsx";
 
 function PrivateRoute({ children }) {
@@ -24,6 +25,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
+      <Route path="/share/:token" element={<ShareView />} />
       <Route
         element={
           <PrivateRoute>

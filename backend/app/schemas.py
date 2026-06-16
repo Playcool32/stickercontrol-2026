@@ -139,3 +139,11 @@ class ContactMessageResponse(BaseModel):
     text: str
     whatsapp_url: str | None
     mailto_url: str | None
+
+
+class ShareTokenResponse(BaseModel):
+    token: str | None
+
+
+class PublicOwnerResponse(BaseModel):
+    owner_name: str

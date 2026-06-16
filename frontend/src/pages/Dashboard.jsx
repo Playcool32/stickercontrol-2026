@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { getAlbum } from "../api/client.js";
+import { generateShareToken, getAlbum, getShareToken } from "../api/client.js";
 import ProgressRing from "../components/ProgressRing.jsx";
 import {
   IconAlbum,
   IconAlert,
+  IconCheck,
+  IconCopy,
   IconLayers,
   IconMapPin,
   IconSearch,
@@ -15,6 +17,33 @@ export default function Dashboard() {
   const [summary, setSummary] = useState(null);
   const [countries, setCountries] = useState([]);
   const [error, setError] = useState(null);
+  const [shareToken, setShareToken] = useState(undefined); // undefined=cargando, null=sin token, string=token
+  const [copiedLink, setCopiedLink] = useState(false);
+
+  useEffect(() => {
+    getShareToken()
+      .then((data) => setShareToken(data.token))
+      .catch(() => setShareToken(null));
+  }, []);
+
+  const handleGenerateLink = async () => {
+    try {
+      const data = await generateShareToken();
+      setShareToken(data.token);
+    } catch {
+      // silencioso — el boton volvera a aparecer
+    }
+  };
+
+  const shareUrl = shareToken
+    ? `${window.location.origin}${import.meta.env.BASE_URL}share/${shareToken}`
+    : null;
+
+  const handleCopyLink = async () => {
+    await navigator.clipboard.writeText(shareUrl);
+    setCopiedLink(true);
+    setTimeout(() => setCopiedLink(false), 2000);
+  };
 
   useEffect(() => {
     getAlbum()
@@ -112,6 +141,37 @@ export default function Dashboard() {
           <QuickLink to="/repetidas" label="Repetidas" icon={IconLayers} />
           <QuickLink to="/cerca" label="Usuarios cerca" icon={IconMapPin} className="md:col-span-2" />
         </div>
+      </div>
+
+      <div className="rounded-2xl bg-white p-4 shadow-sm">
+        <h2 className="mb-3 font-semibold text-gray-800">Compartir mi álbum</h2>
+        {shareToken === undefined && (
+          <p className="text-sm text-gray-400">Cargando…</p>
+        )}
+        {shareToken === null && (
+          <button
+            type="button"
+            onClick={handleGenerateLink}
+            className="w-full rounded-xl bg-green-600 py-3 text-sm font-bold text-white active:opacity-80"
+          >
+            Generar link público
+          </button>
+        )}
+        {shareToken && (
+          <div className="flex flex-col gap-2">
+            <p className="break-all rounded-lg bg-gray-50 p-2 text-xs text-gray-600">
+              {shareUrl}
+            </p>
+            <button
+              type="button"
+              onClick={handleCopyLink}
+              className="flex items-center justify-center gap-2 rounded-xl bg-green-600 py-3 text-sm font-bold text-white active:opacity-80"
+            >
+              {copiedLink ? <IconCheck className="h-4 w-4" /> : <IconCopy className="h-4 w-4" />}
+              {copiedLink ? "¡Link copiado!" : "Copiar link"}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

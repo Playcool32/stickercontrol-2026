@@ -105,3 +105,37 @@ export function getMe() {
 export function logout() {
   return request("/auth/logout", { method: "POST" });
 }
+
+// --- Fase 2B: link publico de solo lectura ---
+
+export function generateShareToken() {
+  return request("/share/generate", { method: "POST" });
+}
+
+export function getShareToken() {
+  return request("/share/token");
+}
+
+const PUBLIC_BASE = `${import.meta.env.BASE_URL}api/public`;
+
+async function publicFetch(url) {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(String(res.status));
+  return res.json();
+}
+
+export function getPublicOwner(token) {
+  return publicFetch(`${PUBLIC_BASE}/${token}`);
+}
+
+export function getPublicAlbum(token) {
+  return publicFetch(`${PUBLIC_BASE}/${token}/album`);
+}
+
+export function getPublicMissing(token) {
+  return publicFetch(`${PUBLIC_BASE}/${token}/missing`);
+}
+
+export function getPublicDuplicates(token) {
+  return publicFetch(`${PUBLIC_BASE}/${token}/duplicates`);
+}

@@ -5,7 +5,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from starlette.middleware.sessions import SessionMiddleware
 
 from .database import init_db
-from .routes import auth, collection, nearby, profile, reports, stickers, trades
+from .routes import auth, collection, nearby, profile, reports, share, stickers, trades
 
 app = FastAPI(title="StickerControl 2026 API")
 
@@ -41,6 +41,7 @@ app.include_router(reports.router)
 app.include_router(trades.router)
 app.include_router(profile.router)
 app.include_router(nearby.router)
+app.include_router(share.router)
 
 
 @app.on_event("startup")

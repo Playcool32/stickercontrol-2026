@@ -71,6 +71,18 @@ def _ensure_user_google_id_column() -> None:
         conn.commit()
 
 
+def _ensure_share_token_column() -> None:
+    """Agrega `users.share_token` (Fase 2B) si falta, con indice unico."""
+    with engine.connect() as conn:
+        existing = {row[1] for row in conn.exec_driver_sql("PRAGMA table_info(users)")}
+        if "share_token" not in existing:
+            conn.exec_driver_sql("ALTER TABLE users ADD COLUMN share_token VARCHAR")
+        conn.exec_driver_sql(
+            "CREATE UNIQUE INDEX IF NOT EXISTS ix_users_share_token ON users (share_token)"
+        )
+        conn.commit()
+
+
 def init_db() -> None:
     """Crea las tablas (si no existen) y aplica migraciones livianas."""
     from . import models  # noqa: F401  (registra los modelos en Base)
@@ -78,3 +90,4 @@ def init_db() -> None:
     Base.metadata.create_all(bind=engine)
     _ensure_user_profile_columns()
     _ensure_user_google_id_column()
+    _ensure_share_token_column()

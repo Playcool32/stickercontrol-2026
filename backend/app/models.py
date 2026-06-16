@@ -38,6 +38,7 @@ class User(Base):
     contact_email: Mapped[str | None] = mapped_column(String, nullable=True)
     contact_whatsapp: Mapped[str | None] = mapped_column(String, nullable=True)
     is_public: Mapped[bool] = mapped_column(Boolean, default=False)
+    share_token: Mapped[str | None] = mapped_column(String, unique=True, index=True, nullable=True)
 
     stickers: Mapped[list["UserSticker"]] = relationship(back_populates="user")
 
