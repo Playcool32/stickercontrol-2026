@@ -56,6 +56,10 @@ export function updateNotes(id, notes) {
   });
 }
 
+export function bulkMarkCountry(countryCode) {
+  return request(`/collection/bulk-mark-country/${countryCode}`, { method: "POST" });
+}
+
 export function getAlbum() {
   return request("/reports/album");
 }

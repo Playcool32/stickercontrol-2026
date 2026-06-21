@@ -5,7 +5,7 @@ from .. import models
 from ..auth import get_current_user_id
 from ..crud import get_or_create_user_sticker, to_sticker_out
 from ..database import get_db
-from ..schemas import NotesUpdate, StickerOut
+from ..schemas import BulkMarkCountryResponse, NotesUpdate, StickerOut
 
 router = APIRouter(prefix="/api/collection", tags=["collection"])
 
@@ -95,3 +95,27 @@ def update_notes(
     entry = get_or_create_user_sticker(db, user_id, sticker_id)
     entry.notes = payload.notes
     return _respond(db, sticker, entry)
+
+
+@router.post("/bulk-mark-country/{country_code}", response_model=BulkMarkCountryResponse)
+def bulk_mark_country(
+    country_code: str,
+    db: Session = Depends(get_db),
+    user_id: int = Depends(get_current_user_id),
+):
+    stickers = (
+        db.query(models.MasterSticker)
+        .filter(models.MasterSticker.country_code == country_code.upper())
+        .all()
+    )
+    if not stickers:
+        raise HTTPException(status_code=404, detail="Pais no encontrado")
+
+    for sticker in stickers:
+        entry = get_or_create_user_sticker(db, user_id, sticker.id)
+        entry.is_pasted = True
+
+    db.commit()
+    return BulkMarkCountryResponse(
+        country_code=country_code.upper(), marked=len(stickers), total=len(stickers)
+    )

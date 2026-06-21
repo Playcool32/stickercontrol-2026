@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { getAlbum, updateNotes } from "../api/client.js";
+import { bulkMarkCountry, getAlbum, updateNotes } from "../api/client.js";
 import { STICKER_ACTIONS } from "../api/stickerActions.js";
 import ProgressRing from "../components/ProgressRing.jsx";
 import StickerDetailModal from "../components/StickerDetailModal.jsx";
@@ -17,6 +17,7 @@ export default function Album() {
   const [album, setAlbum] = useState(null);
   const [error, setError] = useState(null);
   const [selectedSticker, setSelectedSticker] = useState(null);
+  const [bulkFeedback, setBulkFeedback] = useState(null);
 
   const loadAlbum = () => {
     getAlbum()
@@ -47,6 +48,21 @@ export default function Album() {
     }
   };
 
+  const handleBulkMark = async (countryCode, total) => {
+    const confirmed = window.confirm(
+      `Vas a marcar las ${total} figuritas de ${countryCode} como pegadas. No se perderán notas ni repetidas. ¿Continuar?`
+    );
+    if (!confirmed) return;
+
+    try {
+      const result = await bulkMarkCountry(countryCode);
+      setBulkFeedback(`${result.country_code}: ${result.marked}/${result.total} marcadas como pegadas.`);
+      loadAlbum();
+    } catch (err) {
+      setError(err.message);
+    }
+  };
+
   if (error) return <p className="text-faltante">Error: {error}</p>;
   if (!album) return <p className="text-gray-500">Cargando...</p>;
 
@@ -54,13 +70,20 @@ export default function Album() {
     <div className="flex flex-col gap-6">
       <h2 className="text-2xl font-bold text-gray-800">Álbum</h2>
 
+      {bulkFeedback && <p className="text-sm font-semibold text-pegada">{bulkFeedback}</p>}
+
       {album.special.length > 0 && (
         <section className="flex flex-col gap-3">
           <h3 className="inline-block w-fit rounded-full bg-green-600 px-3 py-1 text-sm font-bold text-white">
             Especiales del Mundial
           </h3>
           {album.special.map((country) => (
-            <CountryCard key={country.country_code} country={country} onSelectSticker={setSelectedSticker} />
+            <CountryCard
+              key={country.country_code}
+              country={country}
+              onSelectSticker={setSelectedSticker}
+              onBulkMark={handleBulkMark}
+            />
           ))}
         </section>
       )}
@@ -71,7 +94,12 @@ export default function Album() {
             Grupo {group.group}
           </h3>
           {group.countries.map((country) => (
-            <CountryCard key={country.country_code} country={country} onSelectSticker={setSelectedSticker} />
+            <CountryCard
+              key={country.country_code}
+              country={country}
+              onSelectSticker={setSelectedSticker}
+              onBulkMark={handleBulkMark}
+            />
           ))}
         </section>
       ))}
@@ -86,7 +114,7 @@ export default function Album() {
   );
 }
 
-function CountryCard({ country, onSelectSticker }) {
+function CountryCard({ country, onSelectSticker, onBulkMark }) {
   const { summary } = country;
   return (
     <div className="rounded-2xl bg-white p-4 shadow-sm">
@@ -113,6 +141,13 @@ function CountryCard({ country, onSelectSticker }) {
             </p>
           </div>
         </div>
+        <button
+          type="button"
+          onClick={() => onBulkMark(country.country_code, summary.total)}
+          className="flex-shrink-0 rounded-lg bg-pegada px-2 py-1 text-[11px] font-semibold text-white active:scale-95 md:text-xs"
+        >
+          Marcar selección completa
+        </button>
         <ProgressRing
           percentage={summary.porcentaje}
           size={56}

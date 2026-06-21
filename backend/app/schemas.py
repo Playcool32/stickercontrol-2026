@@ -42,6 +42,12 @@ class NotesUpdate(BaseModel):
     notes: str | None = None
 
 
+class BulkMarkCountryResponse(BaseModel):
+    country_code: str
+    marked: int
+    total: int
+
+
 class CountrySummary(BaseModel):
     total: int
     pegadas: int
