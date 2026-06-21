@@ -76,6 +76,10 @@ export function getTradesStatus() {
   return request("/trades/status");
 }
 
+export function getTradeMatch(otherUserId) {
+  return request(`/trades/with-user/${otherUserId}`);
+}
+
 export function getProfile() {
   return request("/profile");
 }

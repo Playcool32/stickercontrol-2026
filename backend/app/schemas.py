@@ -151,5 +151,20 @@ class ShareTokenResponse(BaseModel):
     token: str | None
 
 
+class TradeOtherUser(BaseModel):
+    id: int
+    display_name: str
+    city: str | None
+
+
+class TradeMatchResponse(BaseModel):
+    other_user: TradeOtherUser
+    i_can_give: list[str]
+    i_can_receive: list[str]
+    summary_text: str
+    whatsapp_url: str | None
+    mailto_url: str | None
+
+
 class PublicOwnerResponse(BaseModel):
     owner_name: str

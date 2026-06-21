@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { getContactMessage, getNearby, getProfile, updateProfile } from "../api/client.js";
+import { getContactMessage, getNearby, getProfile, getTradeMatch, updateProfile } from "../api/client.js";
 import {
   IconCheck,
   IconCopy,
@@ -9,6 +9,7 @@ import {
   IconMapPin,
   IconWhatsApp,
 } from "../components/icons.jsx";
+import TradeResultPanel from "../components/TradeResultPanel.jsx";
 
 const EMPTY_FORM = {
   display_name: "",
@@ -43,6 +44,9 @@ export default function Nearby() {
   const [nearbyError, setNearbyError] = useState(null);
   const [messages, setMessages] = useState({});
   const [copiedUserId, setCopiedUserId] = useState(null);
+
+  const [trades, setTrades] = useState({});
+  const [tradeErrors, setTradeErrors] = useState({});
 
   useEffect(() => {
     getProfile()
@@ -136,6 +140,16 @@ export default function Nearby() {
   const handleEmail = async (user) => {
     const { mailto_url } = await getMessage(user.user_id);
     if (mailto_url) window.location.href = mailto_url;
+  };
+
+  const handleCalculateTrade = async (userId) => {
+    setTradeErrors((e) => ({ ...e, [userId]: null }));
+    try {
+      const trade = await getTradeMatch(userId);
+      setTrades((t) => ({ ...t, [userId]: trade }));
+    } catch (err) {
+      setTradeErrors((e) => ({ ...e, [userId]: err.message }));
+    }
   };
 
   return (
@@ -319,7 +333,20 @@ export default function Nearby() {
                   Email
                 </button>
               )}
+
+              <button
+                type="button"
+                onClick={() => handleCalculateTrade(user.user_id)}
+                className="flex items-center gap-1.5 rounded-xl bg-green-600 px-3 py-2 text-sm font-bold text-white"
+              >
+                Calcular intercambio
+              </button>
             </div>
+
+            {tradeErrors[user.user_id] && (
+              <p className="mt-2 text-sm text-faltante">Error: {tradeErrors[user.user_id]}</p>
+            )}
+            {trades[user.user_id] && <TradeResultPanel trade={trades[user.user_id]} />}
           </div>
         ))}
       </div>
