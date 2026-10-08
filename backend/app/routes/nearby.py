@@ -12,7 +12,7 @@ from urllib.parse import quote
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from .. import models
+from .. import demo, models
 from ..auth import get_current_user_id
 from ..crud import get_missing_and_duplicate_codes
 from ..database import get_db
@@ -38,11 +38,13 @@ def get_nearby(
     me = db.get(models.User, user_id)
     my_missing, my_duplicates = get_missing_and_duplicate_codes(db, user_id)
 
-    others = (
-        db.query(models.User)
-        .filter(models.User.is_public == True, models.User.id != user_id)  # noqa: E712
-        .all()
+    query = db.query(models.User).filter(
+        models.User.is_public == True, models.User.id != user_id  # noqa: E712
     )
+    if demo.demo_enabled():
+        # Demo: solo los coleccionistas ficticios, nunca otros visitantes.
+        query = query.filter(models.User.email.like(f"%{demo.COLLECTOR_DOMAIN}"))
+    others = query.all()
 
     results = []
     for other in others:
@@ -83,7 +85,7 @@ def get_contact_message(
 ):
     me = db.get(models.User, user_id)
     other = db.get(models.User, other_user_id)
-    if other is None or not other.is_public:
+    if other is None or not other.is_public or (demo.demo_enabled() and not demo.is_collector(other)):
         raise HTTPException(status_code=404, detail="Usuario no encontrado")
 
     my_missing, my_duplicates = get_missing_and_duplicate_codes(db, user_id)
@@ -109,12 +111,13 @@ def get_contact_message(
         "¿Te interesa coordinar?"
     )
 
+    # Demo: nunca se generan links reales de WhatsApp ni de email.
     whatsapp_url = None
-    if other.contact_whatsapp:
+    if other.contact_whatsapp and not demo.demo_enabled():
         whatsapp_url = f"https://wa.me/{other.contact_whatsapp}?text={quote(text, safe='')}"
 
     mailto_url = None
-    if other.contact_email:
+    if other.contact_email and not demo.demo_enabled():
         subject = quote("Intercambio de figuritas StickerControl 2026", safe="")
         body = quote(text, safe="")
         mailto_url = f"mailto:{other.contact_email}?subject={subject}&body={body}"

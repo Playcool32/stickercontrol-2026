@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import { DEMO_MODE } from "../demo.js";
 import { IconCheck, IconCopy } from "./icons.jsx";
 
 // Resultado de "Calcular intercambio" (Fase 2D), reutilizado por Nearby.jsx
@@ -31,6 +32,11 @@ export default function TradeResultPanel({ trade }) {
         {copied ? <IconCheck className="h-4 w-4" /> : <IconCopy className="h-4 w-4" />}
         {copied ? "¡Copiado!" : "Copiar resumen para WhatsApp"}
       </button>
+      {DEMO_MODE && (
+        <p className="text-xs text-gray-500">
+          Coincidencias calculadas con tu álbum de prueba y la colección ficticia de este usuario.
+        </p>
+      )}
     </div>
   );
 }

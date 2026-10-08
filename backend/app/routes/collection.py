@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from .. import models
+from .. import demo, models
 from ..auth import get_current_user_id
 from ..crud import get_or_create_user_sticker, to_sticker_out
 from ..database import get_db
@@ -55,6 +55,8 @@ def increment_sticker(
 ):
     sticker = _get_master_sticker(db, sticker_id)
     entry = get_or_create_user_sticker(db, user_id, sticker_id)
+    if demo.demo_enabled() and entry.quantity >= demo.max_quantity():
+        raise HTTPException(status_code=400, detail="Cantidad maxima alcanzada en la demo")
     entry.quantity += 1
     return _respond(db, sticker, entry)
 
@@ -91,6 +93,8 @@ def update_notes(
     db: Session = Depends(get_db),
     user_id: int = Depends(get_current_user_id),
 ):
+    if demo.demo_enabled() and payload.notes and len(payload.notes) > demo.max_notes_length():
+        raise HTTPException(status_code=400, detail="Nota demasiado larga para la demo")
     sticker = _get_master_sticker(db, sticker_id)
     entry = get_or_create_user_sticker(db, user_id, sticker_id)
     entry.notes = payload.notes

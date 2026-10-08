@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useState } from "react";
 
-import { getMe, loginWithGoogle, logout as logoutRequest } from "../api/client.js";
+import { getMe, loginDemo as loginDemoRequest, loginWithGoogle, logout as logoutRequest } from "../api/client.js";
 
 const AuthContext = createContext(null);
 
@@ -24,13 +24,20 @@ export function AuthProvider({ children }) {
     return data;
   };
 
+  // Demo: crea un sandbox nuevo (o reemplaza el actual) sin Google.
+  const loginDemo = async () => {
+    const data = await loginDemoRequest();
+    setUser(data);
+    return data;
+  };
+
   const logout = async () => {
     await logoutRequest();
     setUser(null);
   };
 
   return (
-    <AuthContext.Provider value={{ user, loading, login, logout }}>
+    <AuthContext.Provider value={{ user, loading, login, loginDemo, logout }}>
       {children}
     </AuthContext.Provider>
   );

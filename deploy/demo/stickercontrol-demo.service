@@ -1,0 +1,40 @@
+# StickerControl Demo Roura — backend FastAPI (PLANTILLA, no instalada).
+# Destino: /etc/systemd/system/stickercontrol-demo.service
+# Usuario de sistema dedicado, sin login ni privilegios: stickerdemo.
+[Unit]
+Description=StickerControl Demo Roura (FastAPI, modo demo)
+After=network.target
+
+[Service]
+Type=simple
+User=stickerdemo
+Group=stickerdemo
+WorkingDirectory=/var/www/stickercontrol-demo/app/backend
+EnvironmentFile=/var/www/stickercontrol-demo/.env
+ExecStart=/var/www/stickercontrol-demo/app/backend/.venv/bin/uvicorn app.main:app \
+    --host 127.0.0.1 --port 8012 --workers 1 \
+    --proxy-headers --forwarded-allow-ips=127.0.0.1 --no-server-header
+Restart=on-failure
+RestartSec=5
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+# Endurecimiento: solo puede escribir la carpeta de la base.
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+ReadWritePaths=/var/www/stickercontrol-demo/data
+# Limites para no afectar a los otros sitios del VPS (1 vCPU, ~1 GB).
+MemoryMax=200M
+CPUQuota=50%
+TasksMax=64
+
+[Install]
+WantedBy=multi-user.target

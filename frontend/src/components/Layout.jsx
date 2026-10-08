@@ -1,6 +1,8 @@
+import { useState } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
 import { useAuth } from "../context/AuthContext.jsx";
+import { DEMO_MODE } from "../demo.js";
 import {
   IconAlbum,
   IconAlert,
@@ -26,6 +28,7 @@ export default function Layout() {
 
   return (
     <div className="flex min-h-screen flex-col bg-gray-50">
+      {DEMO_MODE && <DemoBanner />}
       <header className="flex items-center justify-between border-b border-gray-100 bg-white p-3 md:mx-auto md:w-full md:max-w-2xl">
         <span className="text-sm font-bold text-gray-800">StickerControl 2026</span>
         {user && (
@@ -41,7 +44,7 @@ export default function Layout() {
               onClick={logout}
               className="text-xs font-bold text-gray-400 active:text-gray-600"
             >
-              Salir
+              {DEMO_MODE ? "Terminar demo" : "Salir"}
             </button>
           </div>
         )}
@@ -82,6 +85,37 @@ export default function Layout() {
           })}
         </div>
       </nav>
+    </div>
+  );
+}
+
+// Aviso fijo del modo demo + reinicio del álbum de prueba (crea un sandbox
+// nuevo con los datos iniciales y descarta el actual).
+function DemoBanner() {
+  const { loginDemo } = useAuth();
+  const [restarting, setRestarting] = useState(false);
+
+  const handleRestart = async () => {
+    setRestarting(true);
+    try {
+      await loginDemo();
+      window.location.reload();
+    } catch {
+      setRestarting(false);
+    }
+  };
+
+  return (
+    <div className="flex items-center justify-center gap-3 bg-gray-800 px-3 py-2 text-center text-xs text-white">
+      <span>Demo con datos ficticios · tu álbum de prueba se borra automáticamente</span>
+      <button
+        type="button"
+        onClick={handleRestart}
+        disabled={restarting}
+        className="flex-shrink-0 rounded-lg bg-white/15 px-2 py-1 font-bold disabled:opacity-50"
+      >
+        {restarting ? "Reiniciando..." : "Reiniciar demo"}
+      </button>
     </div>
   );
 }

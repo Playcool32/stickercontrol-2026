@@ -1,0 +1,10 @@
+# Todos los dias a las 00:00 de Argentina (03:00 UTC), igual que turismo-demo (PLANTILLA).
+[Unit]
+Description=StickerControl Demo Roura - reset diario 00:00 ART
+
+[Timer]
+OnCalendar=*-*-* 03:00:00 UTC
+Persistent=true
+
+[Install]
+WantedBy=timers.target

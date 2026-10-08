@@ -1,0 +1,16 @@
+# Borra sandboxes vencidos (PLANTILLA). Lo dispara stickercontrol-demo-purge.timer.
+[Unit]
+Description=StickerControl Demo Roura - purga de sandboxes vencidos
+
+[Service]
+Type=oneshot
+User=stickerdemo
+Group=stickerdemo
+WorkingDirectory=/var/www/stickercontrol-demo/app/backend
+EnvironmentFile=/var/www/stickercontrol-demo/.env
+ExecStart=/var/www/stickercontrol-demo/app/backend/.venv/bin/python demo_admin.py purge
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/www/stickercontrol-demo/data

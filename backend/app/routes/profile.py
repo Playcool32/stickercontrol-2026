@@ -1,7 +1,7 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from .. import models
+from .. import demo, models
 from ..auth import get_current_user_id
 from ..database import get_db
 from ..geo import round_coord
@@ -40,6 +40,10 @@ def update_profile(
     db: Session = Depends(get_db),
     user_id: int = Depends(get_current_user_id),
 ):
+    # Demo: el perfil del visitante es fijo y nunca publico, asi un visitante
+    # no puede publicar datos ni aparecer ante otros visitantes.
+    if demo.demo_enabled():
+        raise HTTPException(status_code=403, detail="El perfil no se puede editar en la demo")
     user = db.get(models.User, user_id)
     data = payload.model_dump(exclude_unset=True)
 

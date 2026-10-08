@@ -10,7 +10,7 @@ Todas las rutas existentes ya dependen de esta funcion
 from fastapi import HTTPException, Request, status
 from sqlalchemy.orm import Session
 
-from . import models
+from . import demo, models
 
 SESSION_USER_KEY = "user_id"
 
@@ -19,6 +19,9 @@ def get_current_user_id(request: Request) -> int:
     user_id = request.session.get(SESSION_USER_KEY)
     if user_id is None:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="No autenticado")
+    if demo.demo_enabled() and not demo.session_is_valid(request.session, user_id):
+        request.session.clear()
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Sesion de demo vencida")
     return user_id
 
 

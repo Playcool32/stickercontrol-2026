@@ -35,7 +35,9 @@ DEFAULT_CSV_PATH = Path(__file__).resolve().parent.parent / "data" / "stickers_m
 
 
 def load_rows(csv_path: Path) -> list[dict]:
-    with open(csv_path, newline="", encoding="utf-8") as f:
+    # utf-8-sig: el CSV versionado tiene BOM; con "utf-8" la primera columna
+    # se leia como "﻿code" y la validacion fallaba en una base nueva.
+    with open(csv_path, newline="", encoding="utf-8-sig") as f:
         reader = csv.DictReader(f)
         missing = REQUIRED_COLUMNS - set(reader.fieldnames or [])
         if missing:

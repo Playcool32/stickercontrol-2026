@@ -1,0 +1,17 @@
+# Reset completo diario (PLANTILLA): borra todos los visitantes y regenera
+# los coleccionistas ficticios. Lo dispara stickercontrol-demo-reset.timer.
+[Unit]
+Description=StickerControl Demo Roura - reset diario
+
+[Service]
+Type=oneshot
+User=stickerdemo
+Group=stickerdemo
+WorkingDirectory=/var/www/stickercontrol-demo/app/backend
+EnvironmentFile=/var/www/stickercontrol-demo/.env
+ExecStart=/var/www/stickercontrol-demo/app/backend/.venv/bin/python demo_admin.py reset
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/www/stickercontrol-demo/data

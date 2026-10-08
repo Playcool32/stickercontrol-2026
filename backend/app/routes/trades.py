@@ -9,7 +9,7 @@ from urllib.parse import quote
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from .. import models
+from .. import demo, models
 from ..auth import get_current_user_id
 from ..crud import get_missing_and_duplicate_codes
 from ..database import get_db
@@ -33,7 +33,7 @@ def get_trade_match(
         raise HTTPException(status_code=400, detail="No se puede calcular un intercambio con uno mismo")
 
     other = db.get(models.User, other_user_id)
-    if other is None or not other.is_public:
+    if other is None or not other.is_public or (demo.demo_enabled() and not demo.is_collector(other)):
         raise HTTPException(status_code=404, detail="Usuario no encontrado")
 
     me = db.get(models.User, user_id)
@@ -61,12 +61,13 @@ def get_trade_match(
         "¿Te interesa coordinar?"
     )
 
+    # Demo: nunca se generan links reales de WhatsApp ni de email.
     whatsapp_url = None
-    if other.contact_whatsapp:
+    if other.contact_whatsapp and not demo.demo_enabled():
         whatsapp_url = f"https://wa.me/{other.contact_whatsapp}?text={quote(summary_text, safe='')}"
 
     mailto_url = None
-    if other.contact_email:
+    if other.contact_email and not demo.demo_enabled():
         subject = quote("Intercambio de figuritas StickerControl 2026", safe="")
         body = quote(summary_text, safe="")
         mailto_url = f"mailto:{other.contact_email}?subject={subject}&body={body}"

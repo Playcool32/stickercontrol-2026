@@ -10,6 +10,7 @@ import {
   IconWhatsApp,
 } from "../components/icons.jsx";
 import TradeResultPanel from "../components/TradeResultPanel.jsx";
+import { DEMO_MODE } from "../demo.js";
 
 const EMPTY_FORM = {
   display_name: "",
@@ -44,6 +45,7 @@ export default function Nearby() {
   const [nearbyError, setNearbyError] = useState(null);
   const [messages, setMessages] = useState({});
   const [copiedUserId, setCopiedUserId] = useState(null);
+  const [previewUserId, setPreviewUserId] = useState(null);
 
   const [trades, setTrades] = useState({});
   const [tradeErrors, setTradeErrors] = useState({});
@@ -132,6 +134,12 @@ export default function Nearby() {
     setTimeout(() => setCopiedUserId(null), 2000);
   };
 
+  // Demo: muestra el mensaje que se enviaría, sin abrir WhatsApp.
+  const handlePreview = async (userId) => {
+    await getMessage(userId);
+    setPreviewUserId((current) => (current === userId ? null : userId));
+  };
+
   const handleWhatsapp = async (user) => {
     const { whatsapp_url } = await getMessage(user.user_id);
     if (whatsapp_url) window.open(whatsapp_url, "_blank");
@@ -162,6 +170,16 @@ export default function Nearby() {
         </p>
       </div>
 
+      {DEMO_MODE ? (
+        <div className="rounded-2xl bg-white p-4 text-sm text-gray-600 shadow-sm">
+          <h3 className="text-lg font-bold text-gray-800">Mi perfil</h3>
+          <p className="mt-1">
+            En la demo tu perfil es fijo (Buenos Aires) y no es visible para otros visitantes.
+            Los coleccionistas de abajo son ficticios: las coincidencias se calculan cruzando tu
+            álbum con sus colecciones.
+          </p>
+        </div>
+      ) : (
       <form onSubmit={handleSaveProfile} className="flex flex-col gap-3 rounded-2xl bg-white p-4 shadow-sm">
         <h3 className="text-lg font-bold text-gray-800">Mi perfil</h3>
 
@@ -259,6 +277,7 @@ export default function Nearby() {
           {savingProfile ? "Guardando..." : profileSaved ? "¡Guardado!" : "Guardar perfil"}
         </button>
       </form>
+      )}
 
       <div className="flex flex-col gap-4">
         <h3 className="text-lg font-bold text-gray-800">Coleccionistas cerca</h3>
@@ -312,6 +331,17 @@ export default function Nearby() {
                 {copiedUserId === user.user_id ? "¡Copiado!" : "Copiar mensaje"}
               </button>
 
+              {DEMO_MODE && (
+                <button
+                  type="button"
+                  onClick={() => handlePreview(user.user_id)}
+                  className="flex items-center gap-1.5 rounded-xl bg-gray-100 px-3 py-2 text-sm font-bold text-gray-700"
+                >
+                  <IconWhatsApp className="h-4 w-4" />
+                  {previewUserId === user.user_id ? "Ocultar mensaje" : "Ver mensaje"}
+                </button>
+              )}
+
               {user.has_whatsapp && (
                 <button
                   type="button"
@@ -342,6 +372,15 @@ export default function Nearby() {
                 Calcular intercambio
               </button>
             </div>
+
+            {previewUserId === user.user_id && messages[user.user_id] && (
+              <div className="mt-3 rounded-xl bg-gray-50 p-3 text-sm text-gray-700">
+                <p className="mb-1 text-xs font-semibold text-gray-500">
+                  Mensaje que se enviaría por WhatsApp (en la demo no se envía nada):
+                </p>
+                <p className="whitespace-pre-line">{messages[user.user_id].text}</p>
+              </div>
+            )}
 
             {tradeErrors[user.user_id] && (
               <p className="mt-2 text-sm text-faltante">Error: {tradeErrors[user.user_id]}</p>

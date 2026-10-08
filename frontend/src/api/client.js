@@ -106,6 +106,10 @@ export function loginWithGoogle(credential) {
   });
 }
 
+export function loginDemo() {
+  return request("/auth/demo", { method: "POST" });
+}
+
 export function getMe() {
   return request("/auth/me");
 }
