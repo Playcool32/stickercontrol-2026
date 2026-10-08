@@ -77,7 +77,8 @@ Plantillas en `deploy/demo/`, **sin instalar**:
 |---|---|
 | `stickercontrol-demo.service` | `/etc/systemd/system/` |
 | `stickercontrol-demo-{purge,reset}.{service,timer}` | `/etc/systemd/system/` |
-| `stickercontrol-demo.nginx.conf` | `/etc/nginx/sites-available/stickercontrol-demo` |
+| `stickercontrol-demo-http-bootstrap.nginx.conf` | vhost temporal solo HTTP (primer paso, para emitir el certificado) |
+| `stickercontrol-demo.nginx.conf` | `/etc/nginx/sites-available/stickercontrol-demo` (definitivo, HTTPS) |
 | `stickercontrol-demo-ratelimit.conf` | `/etc/nginx/conf.d/` |
 | `stickercontrol-demo-security-headers.conf` | `/etc/nginx/snippets/` |
 | `demo.env.example` | `/var/www/stickercontrol-demo/.env` (600, secretos nuevos) |
@@ -89,6 +90,7 @@ Estructura en el VPS, mismo patrón que turismo-demo:
 ├── app/           código (git archive de un commit de demo-roura) + backend/.venv
 ├── builds/<commit>/   build del frontend
 ├── public -> builds/<commit>
+├── acme/          webroot de certbot (independiente de public/)
 ├── data/demo.db   única carpeta escribible por el servicio
 └── .env
 ```
