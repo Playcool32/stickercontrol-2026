@@ -4,6 +4,9 @@
 [Unit]
 Description=StickerControl Demo Roura (FastAPI, modo demo)
 After=network.target
+# Limite de reinicios (va en [Unit], no en [Service]).
+StartLimitIntervalSec=300
+StartLimitBurst=5
 
 [Service]
 Type=simple
@@ -16,8 +19,6 @@ ExecStart=/var/www/stickercontrol-demo/app/backend/.venv/bin/uvicorn app.main:ap
     --proxy-headers --forwarded-allow-ips=127.0.0.1 --no-server-header
 Restart=on-failure
 RestartSec=5
-StartLimitIntervalSec=300
-StartLimitBurst=5
 
 # Endurecimiento: solo puede escribir la carpeta de la base.
 NoNewPrivileges=true
