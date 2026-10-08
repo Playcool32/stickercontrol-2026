@@ -63,7 +63,9 @@ export default function Layout() {
                 key={item.to}
                 to={item.to}
                 className={({ isActive }) =>
-                  `flex flex-col items-center justify-center gap-1 py-2.5 text-xs font-semibold leading-tight transition-colors md:gap-0.5 md:py-2 md:text-[10px] ${
+                  // max-[399px]: en pantallas angostas (360/390 px) "Faltantes" y
+                  // "Repetidas" no entraban en su columna de 1/7 a 12px.
+                  `flex flex-col items-center justify-center gap-1 py-2.5 text-xs font-semibold leading-tight transition-colors max-[399px]:text-[11px] max-[399px]:tracking-tight md:gap-0.5 md:py-2 md:text-[10px] ${
                     isActive ? "text-green-600" : "text-gray-400"
                   }`
                 }
