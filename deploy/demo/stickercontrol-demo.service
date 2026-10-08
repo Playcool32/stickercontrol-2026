@@ -31,6 +31,11 @@ ProtectControlGroups=true
 RestrictSUIDSGID=true
 LockPersonality=true
 ReadWritePaths=/var/www/stickercontrol-demo/data
+# Aislamiento de /var/www: el servicio solo ve su propia carpeta (los demas
+# sitios del VPS quedan ocultos aunque sus permisos permitan lectura).
+TemporaryFileSystem=/var/www:ro
+BindReadOnlyPaths=/var/www/stickercontrol-demo
+BindPaths=/var/www/stickercontrol-demo/data
 # Limites para no afectar a los otros sitios del VPS (1 vCPU, ~1 GB).
 MemoryMax=200M
 CPUQuota=50%

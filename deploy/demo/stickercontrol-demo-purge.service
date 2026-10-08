@@ -14,3 +14,8 @@ ProtectSystem=strict
 ProtectHome=true
 PrivateTmp=true
 ReadWritePaths=/var/www/stickercontrol-demo/data
+# Aislamiento de /var/www: el servicio solo ve su propia carpeta (los demas
+# sitios del VPS quedan ocultos aunque sus permisos permitan lectura).
+TemporaryFileSystem=/var/www:ro
+BindReadOnlyPaths=/var/www/stickercontrol-demo
+BindPaths=/var/www/stickercontrol-demo/data
