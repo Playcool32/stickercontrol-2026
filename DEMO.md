@@ -69,9 +69,10 @@ Los 25 tests de `tests/test_demo.py` corren sobre una base SQLite temporal y cub
 - purga, reset y cookie vieja;
 - salvaguarda contra bases reales.
 
-## Despliegue (pendiente de autorización)
+## Despliegue
 
-Plantillas en `deploy/demo/`, **sin instalar**:
+Publicada el 2026-10-08 en `https://stickercontrol-demo.roura.com.ar/`. Ver `STICKERCONTROL_DEMO_DEPLOY_REPORT.md` en
+`ALBUM PANINI/`. Plantillas en `deploy/demo/` (instaladas en el VPS con el mismo contenido):
 
 | Archivo | Destino |
 |---|---|
@@ -80,17 +81,50 @@ Plantillas en `deploy/demo/`, **sin instalar**:
 | `stickercontrol-demo-http-bootstrap.nginx.conf` | vhost temporal solo HTTP (primer paso, para emitir el certificado) |
 | `stickercontrol-demo.nginx.conf` | `/etc/nginx/sites-available/stickercontrol-demo` (definitivo, HTTPS) |
 | `stickercontrol-demo-ratelimit.conf` | `/etc/nginx/conf.d/` |
-| `stickercontrol-demo-security-headers.conf` | `/etc/nginx/snippets/` |
+| `stickercontrol-demo-security-headers.conf` | `/etc/nginx/snippets/` (incluye `frame-ancestors 'self' https://roura.com.ar`, ver abajo) |
 | `demo.env.example` | `/var/www/stickercontrol-demo/.env` (600, secretos nuevos) |
 
 Estructura en el VPS, mismo patrón que turismo-demo:
 
 ```
 /var/www/stickercontrol-demo/
-├── app/           código (git archive de un commit de demo-roura) + backend/.venv
+├── app/           código (app.tar.gz de deploy/demo/package.sh) + backend/.venv
 ├── builds/<commit>/   build del frontend
 ├── public -> builds/<commit>
 ├── acme/          webroot de certbot (independiente de public/)
 ├── data/demo.db   única carpeta escribible por el servicio
 └── .env
 ```
+
+### Empaquetado (`deploy/demo/package.sh`)
+
+```bash
+bash deploy/demo/package.sh      # → release/<commit>/{app.tar.gz, build.tar.gz, SHA256SUMS}
+```
+
+Corre los tests del backend, empaqueta el código del commit y compila el frontend en modo demo
+(`VITE_DEMO_MODE=true`, `VITE_BASE=/`). Se detiene si:
+- el árbol tiene cambios sin commit;
+- algún archivo de texto del paquete contiene un retorno de carro;
+- el build no tiene base `/` o carga Google.
+
+**Fines de línea:** `git archive` aplica `core.autocrlf`, y en Windows eso produce CRLF. El 2026-10-08 el código y las
+configuraciones del VPS quedaron con CRLF: funcionaban, pero no eran idénticos al repositorio. Hoy lo evitan dos cosas:
+- `.gitattributes` fija LF en `deploy/**` y `*.sh`;
+- `package.sh` empaqueta con `-c core.autocrlf=false`.
+
+En Git Bash, MSYS convierte `VITE_BASE=/` en una ruta de Windows; el script lo excluye con `MSYS2_ENV_CONV_EXCL`.
+
+### Visor de Roura Lab (iframe)
+
+La demo se muestra dentro de `https://roura.com.ar/demos/stickercontrol`. Para eso, el snippet de encabezados:
+- autoriza a ese origen con `frame-ancestors 'self' https://roura.com.ar`, nunca `*`;
+- no envía `X-Frame-Options`, porque no admite una lista de orígenes.
+
+El resto de los encabezados no cambia.
+
+La cookie de sesión no se debilita: `roura.com.ar` y `stickercontrol-demo.roura.com.ar` son el mismo sitio, así que
+`SameSite=Lax` funciona dentro del iframe.
+
+Comprobación: `curl -sI https://stickercontrol-demo.roura.com.ar/ | grep -i -E 'x-frame|frame-ancestors'` debe mostrar
+solo la CSP con `frame-ancestors 'self' https://roura.com.ar`.

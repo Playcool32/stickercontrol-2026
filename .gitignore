@@ -17,3 +17,6 @@ frontend/dist/
 
 # Logs
 *.log
+
+# Paquetes de despliegue (deploy/demo/package.sh)
+release/
