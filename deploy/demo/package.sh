@@ -25,9 +25,17 @@ echo "== tests del backend"
 echo "== código ($ID), sin conversión de fines de línea"
 git -c core.autocrlf=false -c core.eol=lf archive --format=tar.gz -o "$OUT/app.tar.gz" HEAD
 mkdir -p "$TMP/app" && tar -xzf "$OUT/app.tar.gz" -C "$TMP/app"
-CR_FILES=$(cd "$TMP/app" && grep -rlI $'\r' . || true)
-[ -z "$CR_FILES" ] || { echo "Archivos con CR en el paquete:" >&2; echo "$CR_FILES" >&2; exit 1; }
-echo "  sin CR ($(find "$TMP/app" -type f | wc -l) archivos)"
+# Control de CR solo en archivos de texto (un PNG puede contener ese byte). No se usa `grep $'\r'`: en Git Bash el
+# CR del argumento llega vacío y el patrón coincide con todo. tr recibe la secuencia «\r» como texto y la interpreta.
+CR_FILES=""
+TEXT_FILES=0
+while IFS= read -r f; do
+  TEXT_FILES=$((TEXT_FILES + 1))
+  n=$(tr -cd '\r' < "$f" | wc -c)
+  [ "$n" -eq 0 ] || CR_FILES="$CR_FILES ${f#"$TMP"/app/}($n)"
+done < <(grep -rIl . "$TMP/app")
+[ -z "$CR_FILES" ] || { echo "Archivos con CR en el paquete:$CR_FILES" >&2; exit 1; }
+echo "  sin CR ($TEXT_FILES archivos de texto, $(find "$TMP/app" -type f | wc -l) en total)"
 
 echo "== frontend en modo demo (VITE_DEMO_MODE=true, VITE_BASE=/)"
 # En Git Bash, MSYS convierte "/" en una ruta de Windows: se excluye VITE_BASE de esa conversión.
