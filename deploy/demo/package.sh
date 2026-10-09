@@ -20,7 +20,8 @@ trap 'rm -rf "$TMP"' EXIT
 rm -rf "$OUT" && mkdir -p "$OUT"
 
 echo "== tests del backend"
-(cd backend && .venv/Scripts/python.exe -m unittest discover -s tests 2>&1 | tail -1)
+# pipefail: si un test falla, el script se detiene aunque grep muestre el resumen.
+(cd backend && .venv/Scripts/python.exe -m unittest discover -s tests 2>&1 | grep -E "^(Ran |OK$|FAILED)")
 
 echo "== código ($ID), sin conversión de fines de línea"
 git -c core.autocrlf=false -c core.eol=lf archive --format=tar.gz -o "$OUT/app.tar.gz" HEAD
